@@ -20,8 +20,6 @@ public class Home_Page extends AppCompatActivity {
 
         ivRandomImage = findViewById(R.id.ivRandomPeoples);
 
-
-
     }
 
     private  void setRandomImage()

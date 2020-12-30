@@ -54,4 +54,20 @@
     <string name="genderButton1">Female</string>
     <string name="gender_Bodytxt">Help us to match you up with like-minded people.</string>
     <string name="gender_Maintxt">What gender do you identify as?</string>
+
+    <string name="gender_allsmall">Gender</string>
+    <string name="men_women">Men + women</string>
+    <string name="save">Save</string>
+    <string name="distance_allsmall">Distance</string>
+    <string name="distance_10km">Distance up to 10km</string>
+    <string name="distance_25km">Distance up to 25km</string>
+    <string name="distance_50km">Distance up to 50km</string>
+    <string name="distance_100km">Distance up to 100km</string>
+    <string name="distance_250km">Distance up to 250km</string>
+    <string name="distance_500km">Distance up to 500km</string>
+    <string name="distance_1000km">Distance up to 1000km</string>
+    <string name="distance_matter">Distance doesnt matter</string>
+    <string name="country_allsmall">Country</string>
+    <string name="only_from_my_country">Only from my country</string>
+
 </resources>

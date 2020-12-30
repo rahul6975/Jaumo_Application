@@ -660,5 +660,16 @@
             android:src="@drawable/ic_user"/>
     </LinearLayout>
 
+    <ImageView
+        android:id="@+id/ivFilter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_filters"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_50"
+        android:background="@drawable/filter_bg"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

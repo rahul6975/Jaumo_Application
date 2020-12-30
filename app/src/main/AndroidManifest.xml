@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Jaumo_App">
-        <activity android:name=".Home_Page_Women"></activity>
+        <activity android:name=".Location_Filter_Women"></activity>
+        <activity android:name=".Location_Filter_Men" />
+        <activity android:name=".Home_Page_Women" />
         <activity android:name=".Home_Page" />
         <activity android:name=".Start_Page" />
         <activity android:name=".FilterActivity" />

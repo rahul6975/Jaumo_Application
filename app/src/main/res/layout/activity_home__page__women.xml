@@ -569,15 +569,9 @@
                     android:textColor="@color/black"
                     android:textSize="@dimen/sp_30" />
 
-
             </LinearLayout>
 
-
-
-
         </LinearLayout>
-
-
 
     </HorizontalScrollView>
 

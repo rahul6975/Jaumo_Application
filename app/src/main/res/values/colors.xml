@@ -11,4 +11,7 @@
     <color name="light_green">#97EBF4</color>
     <color name="light_blue">#B7E2FC</color>
     <color name="light_gray">#E8E8E8</color>
+    <color name="voilet">#0c2743</color>
+    <color name="red">#ea656c</color>
+    <color name="gray">#8293a4</color>
 </resources>

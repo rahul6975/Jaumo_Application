@@ -28,5 +28,9 @@
     <string name="children">CHILDREN</string>
     <string name="over_1000_people">Over 1000 people</string>
     <string name="all">All</string>
-    
+    <string name="find_your_someone">Find Your Someone</string>
+    <string name="sign_up">Sign up</string>
+    <string name="signing_in_policy">By signing up, you accept our terms and privacy policy</string>
+    <string name="have_account">Do you already have an account?</string>
+    <string name="log_in">Log in</string>
 </resources>

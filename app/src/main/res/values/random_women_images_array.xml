@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="women_images">
+        <item>@drawable/women_one</item>
+        <item>@drawable/women_two</item>
+        <item>@drawable/women_three</item>
+        <item>@drawable/women_four</item>
+        <item>@drawable/women_five</item>
+        <item>@drawable/women_six</item>
+        <item>@drawable/women_seven</item>
+        <item>@drawable/women_eight</item>
+        <item>@drawable/women_nine</item>
+        <item>@drawable/women_ten</item>
+        <item>@drawable/women_eleven</item>
+        <item>@drawable/women_twelve</item>
+        <item>@drawable/women_thirteen</item>
+        <item>@drawable/women_fourteen</item>
+        <item>@drawable/women_fifteen</item>
+        <item>@drawable/women_sixteen</item>
+        <item>@drawable/women_seventeen</item>
+        <item>@drawable/women_eighteen</item>
+        <item>@drawable/women_nineteen</item>
+        <item>@drawable/women_twenty</item>
+    </array>
+
+
+</resources>

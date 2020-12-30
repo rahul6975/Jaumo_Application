@@ -9,8 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Jaumo_App">
+
         <activity android:name=".Home_Page"></activity>
         <activity android:name=".Start_Page" />
+
+        <activity android:name=".FilterActivity"></activity>
+        <activity android:name=".GenderActivity" />
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

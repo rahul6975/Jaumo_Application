@@ -13,6 +13,7 @@
         <activity android:name=".SelectCountryActivity" />
         <activity android:name=".SelectDistanceActivity" />
         <activity android:name=".SelectGenderActivity" />
+        <activity android:name=".Home_Page_Women"></activity>
         <activity android:name=".Home_Page" />
         <activity android:name=".Start_Page" />
         <activity android:name=".FilterActivity" />

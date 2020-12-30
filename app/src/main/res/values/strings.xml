@@ -54,7 +54,6 @@
     <string name="genderButton1">Female</string>
     <string name="gender_Bodytxt">Help us to match you up with like-minded people.</string>
     <string name="gender_Maintxt">What gender do you identify as?</string>
-
     <string name="gender_allsmall">Gender</string>
     <string name="men_women">Men + women</string>
     <string name="save">Save</string>
@@ -69,5 +68,36 @@
     <string name="distance_matter">Distance doesnt matter</string>
     <string name="country_allsmall">Country</string>
     <string name="only_from_my_country">Only from my country</string>
-
+    <string name="abhay_sharma">* Abhay Sharma *</string>
+    <string name="suraj_gupta">* Suraj Gupta *</string>
+    <string name="binod_jaiswal">* Binod Jaiswal *</string>
+    <string name="tanmay_punit">* Tanmay Punit *</string>
+    <string name="nipun_jain">* Nipun Jain *</string>
+    <string name="bunty_gosh">* Bunty Gosh *</string>
+    <string name="kailash_patel">* Kailash Patel *</string>
+    <string name="dhruv_shorey">* Dhruv Shorey *</string>
+    <string name="rahul_singh">* Rahul Singh *</string>
+    <string name="hiren_mistry">* Hiren Mistry *</string>
+    <string name="pravin_fransis">* Pravin Fransis *</string>
+    <string name="gaurav_singh">* Gaurav Singh *</string>
+    <string name="aditya_sharma">* Aditya Sharma *</string>
+    <string name="mousin_sayyed">* Mousin Sayyed *</string>
+    <string name="amir_gupta">* Amir Gupta *</string>
+    <string name="arsalan_shaikh">* Arsalan Shaikh *</string>
+    <string name="vineet_yadav">* Vineet Yadav *</string>
+    <string name="bipin_pal">* Bipin Pal *</string>
+    <string name="sachin_goel">* Sachin Goel *</string>
+    <string name="abhinav_bhati">* Abhinav Bhati *</string>
+    <string name="complete_your_profile">Complete your profile</string>
+    <string name="add_photos">Add photos</string>
+    <string name="guest">Guest,28</string>
+    <string name="begumbazar">Begumbazar . 1km</string>
+    <string name="online">Online</string>
+    <string name="verify_profile">Verify your profile</string>
+    <string name="verify_message">As a verified user, you are shown more often to other users</string>
+    <string name="hometown">HOMETOWN</string>
+    <string name="add">Add</string>
+    <string name="profession">PROFESSION</string>
+    <string name="english">English</string>
+    <string name="looking_for_only">Looking For</string>
 </resources>

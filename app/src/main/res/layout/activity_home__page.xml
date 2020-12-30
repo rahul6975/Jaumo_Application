@@ -6,20 +6,592 @@
     android:layout_height="match_parent"
     tools:context=".Home_Page">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+    <HorizontalScrollView
+        android:id="@+id/hsvScroll"
+        android:layout_width="@dimen/dp_0"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
 
-            <ImageView
-                android:id="@+id/ivRandomPeoples"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/men_one"
+                android:orientation="vertical">
 
-                />
+                <TextView
+                    android:layout_marginTop="@dimen/dp_500"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/abhay_sharma"
+                    android:background="@drawable/name_bg"
+                    android:textColor="@color/black"
+                    android:fontFamily="sans-serif"
+                    android:textSize="@dimen/sp_30"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"/>
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="@dimen/dp_3"
+                android:layout_height="match_parent"
+                android:background="@color/red"
+                android:padding="@dimen/dp_2"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/men_two"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_marginTop="@dimen/dp_500"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif"
+                    android:background="@drawable/name_bg"
+                    android:text="@string/suraj_gupta"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_30" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/dp_3"
+                android:layout_height="match_parent"
+                android:background="@color/red"
+                android:padding="@dimen/dp_2"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/men_three"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_marginTop="@dimen/dp_500"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif"
+                    android:background="@drawable/name_bg"
+                    android:text="@string/binod_jaiswal"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_30" />
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="@dimen/dp_3"
+                android:layout_height="match_parent"
+                android:background="@color/red"
+                android:padding="@dimen/dp_2"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/men_four"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_marginTop="@dimen/dp_500"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif"
+                    android:background="@drawable/name_bg"
+                    android:text="@string/tanmay_punit"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_30" />
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="@dimen/dp_3"
+                android:layout_height="match_parent"
+                android:background="@color/red"
+                android:padding="@dimen/dp_2"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/men_five"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_marginTop="@dimen/dp_500"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif"
+                    android:background="@drawable/name_bg"
+                    android:text="@string/nipun_jain"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_30" />
+
+
+            </LinearLayout>
+
+
+
+            <View
+                android:layout_width="@dimen/dp_3"
+                android:layout_height="match_parent"
+                android:background="@color/red"
+                android:padding="@dimen/dp_2"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/men_six"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_marginTop="@dimen/dp_500"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif"
+                    android:background="@drawable/name_bg"
+                    android:text="@string/bunty_gosh"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_30" />
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="@dimen/dp_3"
+                android:layout_height="match_parent"
+                android:background="@color/red"
+                android:padding="@dimen/dp_2"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/men_seven"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_marginTop="@dimen/dp_500"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif"
+                    android:background="@drawable/name_bg"
+                    android:text="@string/kailash_patel"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_30" />
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="@dimen/dp_3"
+                android:layout_height="match_parent"
+                android:background="@color/red"
+                android:padding="@dimen/dp_2"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/men_eight"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_marginTop="@dimen/dp_500"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif"
+                    android:background="@drawable/name_bg"
+                    android:text="@string/dhruv_shorey"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_30" />
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="@dimen/dp_3"
+                android:layout_height="match_parent"
+                android:background="@color/red"
+                android:padding="@dimen/dp_2"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/men_nine"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_marginTop="@dimen/dp_500"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif"
+                    android:background="@drawable/name_bg"
+                    android:text="@string/rahul_singh"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_30" />
+
+
+            </LinearLayout>
+
+
+
+            <View
+                android:layout_width="@dimen/dp_3"
+                android:layout_height="match_parent"
+                android:background="@color/red"
+                android:padding="@dimen/dp_2"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/men_ten"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_marginTop="@dimen/dp_500"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif"
+                    android:background="@drawable/name_bg"
+                    android:text="@string/hiren_mistry"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_30" />
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="@dimen/dp_3"
+                android:layout_height="match_parent"
+                android:background="@color/red"
+                android:padding="@dimen/dp_2"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/men_eleven"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_marginTop="@dimen/dp_500"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif"
+                    android:background="@drawable/name_bg"
+                    android:text="@string/pravin_fransis"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_30" />
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="@dimen/dp_3"
+                android:layout_height="match_parent"
+                android:background="@color/red"
+                android:padding="@dimen/dp_2"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/men_twelve"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_marginTop="@dimen/dp_500"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif"
+                    android:background="@drawable/name_bg"
+                    android:text="@string/gaurav_singh"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_30" />
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="@dimen/dp_3"
+                android:layout_height="match_parent"
+                android:background="@color/red"
+                android:padding="@dimen/dp_2"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/men_thirteen"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_marginTop="@dimen/dp_500"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif"
+                    android:background="@drawable/name_bg"
+                    android:text="@string/aditya_sharma"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_30" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/dp_3"
+                android:layout_height="match_parent"
+                android:background="@color/red"
+                android:padding="@dimen/dp_2"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/men_fourteen"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_marginTop="@dimen/dp_500"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif"
+                    android:background="@drawable/name_bg"
+                    android:text="@string/mousin_sayyed"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_30" />
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="@dimen/dp_3"
+                android:layout_height="match_parent"
+                android:background="@color/red"
+                android:padding="@dimen/dp_2"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/men_fifteen"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_marginTop="@dimen/dp_500"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif"
+                    android:background="@drawable/name_bg"
+                    android:text="@string/amir_gupta"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_30" />
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="@dimen/dp_3"
+                android:layout_height="match_parent"
+                android:background="@color/red"
+                android:padding="@dimen/dp_2"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/men_sixteen"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_marginTop="@dimen/dp_500"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif"
+                    android:background="@drawable/name_bg"
+                    android:text="@string/arsalan_shaikh"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_30" />
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="@dimen/dp_3"
+                android:layout_height="match_parent"
+                android:background="@color/red"
+                android:padding="@dimen/dp_2"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/men_seventeen"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_marginTop="@dimen/dp_500"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif"
+                    android:background="@drawable/name_bg"
+                    android:text="@string/vineet_yadav"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_30" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/dp_3"
+                android:layout_height="match_parent"
+                android:background="@color/red"
+                android:padding="@dimen/dp_2"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/men_eighteen"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_marginTop="@dimen/dp_500"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif"
+                    android:background="@drawable/name_bg"
+                    android:text="@string/bipin_pal"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_30" />
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="@dimen/dp_3"
+                android:layout_height="match_parent"
+                android:background="@color/red"
+                android:padding="@dimen/dp_2"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/men_nineteen"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_marginTop="@dimen/dp_500"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif"
+                    android:background="@drawable/name_bg"
+                    android:text="@string/sachin_goel"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_30" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/dp_3"
+                android:layout_height="match_parent"
+                android:background="@color/red"
+                android:padding="@dimen/dp_2"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/men_twenty"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_marginTop="@dimen/dp_500"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif"
+                    android:background="@drawable/name_bg"
+                    android:text="@string/abhinav_bhati"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_30" />
+
+
+            </LinearLayout>
+
 
 
 
@@ -27,12 +599,88 @@
 
 
 
+    </HorizontalScrollView>
 
 
 
-    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/ibIgnore"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/llBottom"
+        app:layout_constraintStart_toStartOf="@id/hsvScroll"
+        android:src="@drawable/ic_remove"
+        android:layout_margin="@dimen/dp_40"/>
+
+    <ImageButton
+        android:id="@+id/ibMessage"
+        android:layout_width="@dimen/dp_0"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/ibIgnore"
+        app:layout_constraintStart_toEndOf="@id/ibIgnore"
+        android:src="@drawable/ic_message"
+        app:layout_constraintBottom_toTopOf="@id/llBottom"
+        android:layout_margin="@dimen/dp_40"/>
 
 
+    <ImageButton
+        android:id="@+id/ibTick"
+        android:layout_width="@dimen/dp_0"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/ibMessage"
+        app:layout_constraintStart_toEndOf="@id/ibMessage"
+        android:src="@drawable/ic_tick"
+        app:layout_constraintBottom_toTopOf="@id/llBottom"
+        android:layout_margin="@dimen/dp_40"/>
+
+
+
+
+<LinearLayout
+    android:id="@+id/llBottom"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_50"
+    android:background="@color/teal_700"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent">
+
+<ImageButton
+    android:id="@+id/ibRefresh"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:src="@drawable/ic_blank_page"/>
+
+    <ImageButton
+        android:id="@+id/ibLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/ic_pin"/>
+
+    <ImageButton
+        android:id="@+id/ibHeart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/ic_heart"/>
+
+    <ImageButton
+        android:id="@+id/ibChat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/ic_chat"/>
+
+    <ImageButton
+        android:id="@+id/ibUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/ic_user"/>
+</LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

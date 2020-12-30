@@ -15,9 +15,9 @@
         <activity android:name=".SelectGenderActivity" />
         <activity android:name=".Home_Page" />
         <activity android:name=".Start_Page" />
-        <activity android:name=".MainActivity" />
+        <activity android:name=".FilterActivity" />
         <activity android:name=".GenderActivity" />
-        <activity android:name=".FilterActivity">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -19,13 +19,13 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal">
-            
+
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
-                android:background="@drawable/men_one"
+                android:background="@drawable/women_one"
                 android:orientation="vertical">
 
                 <TextView
@@ -34,7 +34,7 @@
                     android:layout_gravity="center"
                     android:background="@drawable/name_bg"
                     android:fontFamily="sans-serif"
-                    android:text="@string/abhay_sharma"
+                    android:text="@string/anita_dev"
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="@dimen/sp_30" />
@@ -52,7 +52,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/men_two"
+                android:background="@drawable/women_two"
                 android:layout_gravity="center"
                 android:orientation="vertical">
 
@@ -62,7 +62,7 @@
                     android:layout_gravity="center"
                     android:fontFamily="sans-serif"
                     android:background="@drawable/name_bg"
-                    android:text="@string/suraj_gupta"
+                    android:text="@string/suman_jaiswal"
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="@dimen/sp_30" />
@@ -79,7 +79,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/men_three"
+                android:background="@drawable/women_three"
                 android:layout_gravity="center"
                 android:orientation="vertical">
 
@@ -89,35 +89,7 @@
                     android:layout_gravity="center"
                     android:fontFamily="sans-serif"
                     android:background="@drawable/name_bg"
-                    android:text="@string/binod_jaiswal"
-                    android:textAlignment="center"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/sp_30" />
-
-
-            </LinearLayout>
-
-
-            <View
-                android:layout_width="@dimen/dp_3"
-                android:layout_height="match_parent"
-                android:background="@color/red"
-                android:padding="@dimen/dp_2"/>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/men_four"
-                android:layout_gravity="center"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:fontFamily="sans-serif"
-                    android:background="@drawable/name_bg"
-                    android:text="@string/tanmay_punit"
+                    android:text="@string/neha_sharma"
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="@dimen/sp_30" />
@@ -135,7 +107,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/men_five"
+                android:background="@drawable/women_four"
                 android:layout_gravity="center"
                 android:orientation="vertical">
 
@@ -145,36 +117,7 @@
                     android:layout_gravity="center"
                     android:fontFamily="sans-serif"
                     android:background="@drawable/name_bg"
-                    android:text="@string/nipun_jain"
-                    android:textAlignment="center"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/sp_30" />
-
-
-            </LinearLayout>
-
-
-
-            <View
-                android:layout_width="@dimen/dp_3"
-                android:layout_height="match_parent"
-                android:background="@color/red"
-                android:padding="@dimen/dp_2"/>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/men_six"
-                android:layout_gravity="center"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:fontFamily="sans-serif"
-                    android:background="@drawable/name_bg"
-                    android:text="@string/bunty_gosh"
+                    android:text="@string/jaiswi_jain"
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="@dimen/sp_30" />
@@ -192,7 +135,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/men_seven"
+                android:background="@drawable/women_five"
                 android:layout_gravity="center"
                 android:orientation="vertical">
 
@@ -202,63 +145,7 @@
                     android:layout_gravity="center"
                     android:fontFamily="sans-serif"
                     android:background="@drawable/name_bg"
-                    android:text="@string/kailash_patel"
-                    android:textAlignment="center"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/sp_30" />
-
-
-            </LinearLayout>
-
-
-            <View
-                android:layout_width="@dimen/dp_3"
-                android:layout_height="match_parent"
-                android:background="@color/red"
-                android:padding="@dimen/dp_2"/>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/men_eight"
-                android:layout_gravity="center"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:fontFamily="sans-serif"
-                    android:background="@drawable/name_bg"
-                    android:text="@string/dhruv_shorey"
-                    android:textAlignment="center"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/sp_30" />
-
-
-            </LinearLayout>
-
-
-            <View
-                android:layout_width="@dimen/dp_3"
-                android:layout_height="match_parent"
-                android:background="@color/red"
-                android:padding="@dimen/dp_2"/>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/men_nine"
-                android:layout_gravity="center"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:fontFamily="sans-serif"
-                    android:background="@drawable/name_bg"
-                    android:text="@string/rahul_singh"
+                    android:text="@string/priya_rai"
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="@dimen/sp_30" />
@@ -277,7 +164,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/men_ten"
+                android:background="@drawable/women_six"
                 android:layout_gravity="center"
                 android:orientation="vertical">
 
@@ -287,7 +174,7 @@
                     android:layout_gravity="center"
                     android:fontFamily="sans-serif"
                     android:background="@drawable/name_bg"
-                    android:text="@string/hiren_mistry"
+                    android:text="@string/suman_shiddique"
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="@dimen/sp_30" />
@@ -305,7 +192,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/men_eleven"
+                android:background="@drawable/women_seven"
                 android:layout_gravity="center"
                 android:orientation="vertical">
 
@@ -315,7 +202,7 @@
                     android:layout_gravity="center"
                     android:fontFamily="sans-serif"
                     android:background="@drawable/name_bg"
-                    android:text="@string/pravin_fransis"
+                    android:text="@string/dimple_mundwa"
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="@dimen/sp_30" />
@@ -333,7 +220,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/men_twelve"
+                android:background="@drawable/women_eight"
                 android:layout_gravity="center"
                 android:orientation="vertical">
 
@@ -343,7 +230,7 @@
                     android:layout_gravity="center"
                     android:fontFamily="sans-serif"
                     android:background="@drawable/name_bg"
-                    android:text="@string/gaurav_singh"
+                    android:text="@string/shreya_singh"
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="@dimen/sp_30" />
@@ -361,7 +248,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/men_thirteen"
+                android:background="@drawable/women_nine"
                 android:layout_gravity="center"
                 android:orientation="vertical">
 
@@ -371,7 +258,7 @@
                     android:layout_gravity="center"
                     android:fontFamily="sans-serif"
                     android:background="@drawable/name_bg"
-                    android:text="@string/aditya_sharma"
+                    android:text="@string/nidhi_chauhan"
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="@dimen/sp_30" />
@@ -379,32 +266,6 @@
 
             </LinearLayout>
 
-            <View
-                android:layout_width="@dimen/dp_3"
-                android:layout_height="match_parent"
-                android:background="@color/red"
-                android:padding="@dimen/dp_2"/>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/men_fourteen"
-                android:layout_gravity="center"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:fontFamily="sans-serif"
-                    android:background="@drawable/name_bg"
-                    android:text="@string/mousin_sayyed"
-                    android:textAlignment="center"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/sp_30" />
-
-
-            </LinearLayout>
 
 
             <View
@@ -416,7 +277,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/men_fifteen"
+                android:background="@drawable/women_ten"
                 android:layout_gravity="center"
                 android:orientation="vertical">
 
@@ -426,7 +287,7 @@
                     android:layout_gravity="center"
                     android:fontFamily="sans-serif"
                     android:background="@drawable/name_bg"
-                    android:text="@string/amir_gupta"
+                    android:text="@string/jaishri_hansa"
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="@dimen/sp_30" />
@@ -444,7 +305,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/men_sixteen"
+                android:background="@drawable/women_eleven"
                 android:layout_gravity="center"
                 android:orientation="vertical">
 
@@ -454,7 +315,7 @@
                     android:layout_gravity="center"
                     android:fontFamily="sans-serif"
                     android:background="@drawable/name_bg"
-                    android:text="@string/arsalan_shaikh"
+                    android:text="@string/muskan_khan"
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="@dimen/sp_30" />
@@ -472,7 +333,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/men_seventeen"
+                android:background="@drawable/women_twelve"
                 android:layout_gravity="center"
                 android:orientation="vertical">
 
@@ -482,34 +343,7 @@
                     android:layout_gravity="center"
                     android:fontFamily="sans-serif"
                     android:background="@drawable/name_bg"
-                    android:text="@string/vineet_yadav"
-                    android:textAlignment="center"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/sp_30" />
-
-
-            </LinearLayout>
-
-            <View
-                android:layout_width="@dimen/dp_3"
-                android:layout_height="match_parent"
-                android:background="@color/red"
-                android:padding="@dimen/dp_2"/>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/men_eighteen"
-                android:layout_gravity="center"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:fontFamily="sans-serif"
-                    android:background="@drawable/name_bg"
-                    android:text="@string/bipin_pal"
+                    android:text="@string/priyanka_lobhe"
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="@dimen/sp_30" />
@@ -527,7 +361,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/men_nineteen"
+                android:background="@drawable/women_thirteen"
                 android:layout_gravity="center"
                 android:orientation="vertical">
 
@@ -537,7 +371,7 @@
                     android:layout_gravity="center"
                     android:fontFamily="sans-serif"
                     android:background="@drawable/name_bg"
-                    android:text="@string/sachin_goel"
+                    android:text="@string/yamini_gautam"
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="@dimen/sp_30" />
@@ -554,7 +388,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/men_twenty"
+                android:background="@drawable/women_fourteen"
                 android:layout_gravity="center"
                 android:orientation="vertical">
 
@@ -564,7 +398,173 @@
                     android:layout_gravity="center"
                     android:fontFamily="sans-serif"
                     android:background="@drawable/name_bg"
-                    android:text="@string/abhinav_bhati"
+                    android:text="@string/kaira_singh"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_30" />
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="@dimen/dp_3"
+                android:layout_height="match_parent"
+                android:background="@color/red"
+                android:padding="@dimen/dp_2"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/women_fifteen"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif"
+                    android:background="@drawable/name_bg"
+                    android:text="@string/heena_shaikh"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_30" />
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="@dimen/dp_3"
+                android:layout_height="match_parent"
+                android:background="@color/red"
+                android:padding="@dimen/dp_2"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/women_sixteen"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif"
+                    android:background="@drawable/name_bg"
+                    android:text="@string/kulsum_khan"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_30" />
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="@dimen/dp_3"
+                android:layout_height="match_parent"
+                android:background="@color/red"
+                android:padding="@dimen/dp_2"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/women_seventeen"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif"
+                    android:background="@drawable/name_bg"
+                    android:text="@string/nisha_dubey"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_30" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/dp_3"
+                android:layout_height="match_parent"
+                android:background="@color/red"
+                android:padding="@dimen/dp_2"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/women_eighteen"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif"
+                    android:background="@drawable/name_bg"
+                    android:text="@string/lovely_joy"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_30" />
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="@dimen/dp_3"
+                android:layout_height="match_parent"
+                android:background="@color/red"
+                android:padding="@dimen/dp_2"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/women_nineteen"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif"
+                    android:background="@drawable/name_bg"
+                    android:text="@string/kareshma_yadav"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_30" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/dp_3"
+                android:layout_height="match_parent"
+                android:background="@color/red"
+                android:padding="@dimen/dp_2"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/women_twenty"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif"
+                    android:background="@drawable/name_bg"
+                    android:text="@string/neeta_singh"
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="@dimen/sp_30" />
@@ -582,83 +582,83 @@
     </HorizontalScrollView>
 
 
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="@dimen/dp_70"
-    app:layout_constraintBottom_toTopOf="@id/llBottom"
-    android:layout_marginBottom="@dimen/dp_40">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_70"
+        app:layout_constraintBottom_toTopOf="@id/llBottom"
+        android:layout_marginBottom="@dimen/dp_40">
 
-    <ImageView
-        android:id="@+id/ivIgnore"
-        android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:src="@drawable/ic_remove"
-        />
+        <ImageView
+            android:id="@+id/ivIgnore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_remove"
+            />
 
-    <ImageView
-        android:id="@+id/ivMessage"
-        android:layout_weight="1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_message"/>
-
-
-    <ImageView
-        android:id="@+id/ibTick"
-        android:layout_weight="1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_tick" />
-</LinearLayout>
+        <ImageView
+            android:id="@+id/ivMessage"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_message"/>
 
 
+        <ImageView
+            android:id="@+id/ibTick"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_tick" />
+    </LinearLayout>
 
 
-<LinearLayout
-    android:id="@+id/llBottom"
-    android:layout_width="match_parent"
-    android:layout_height="@dimen/dp_50"
-    android:background="@color/white"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintLeft_toLeftOf="parent"
-    app:layout_constraintRight_toRightOf="parent">
 
-<ImageView
-    android:id="@+id/ibRefresh"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_weight="1"
-    android:src="@drawable/ic_blank_page"/>
 
-    <ImageView
-        android:id="@+id/ibLocation"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:src="@drawable/ic_pin"/>
+    <LinearLayout
+        android:id="@+id/llBottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
 
-    <ImageView
-        android:id="@+id/ibHeart"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:src="@drawable/ic_heart"/>
+        <ImageView
+            android:id="@+id/ibRefresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_blank_page"/>
 
-    <ImageView
-        android:id="@+id/ibChat"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:src="@drawable/ic_chat"/>
+        <ImageView
+            android:id="@+id/ibLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_pin"/>
 
-    <ImageView
-        android:id="@+id/ibUser"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:src="@drawable/ic_user"/>
-</LinearLayout>
+        <ImageView
+            android:id="@+id/ibHeart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_heart"/>
+
+        <ImageView
+            android:id="@+id/ibChat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_chat"/>
+
+        <ImageView
+            android:id="@+id/ibUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_user"/>
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

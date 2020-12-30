@@ -582,37 +582,35 @@
     </HorizontalScrollView>
 
 
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_70"
+    app:layout_constraintBottom_toTopOf="@id/llBottom"
+    android:layout_marginBottom="@dimen/dp_40">
 
-
-    <ImageButton
-        android:id="@+id/ibIgnore"
-    android:layout_width="0dp"
-    android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@id/llBottom"
-        app:layout_constraintStart_toStartOf="@id/hsvScroll"
+    <ImageView
+        android:id="@+id/ivIgnore"
+        android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:src="@drawable/ic_remove"
-        android:layout_margin="@dimen/dp_40"/>
+        />
 
-    <ImageButton
-        android:id="@+id/ibMessage"
-        android:layout_width="@dimen/dp_0"
+    <ImageView
+        android:id="@+id/ivMessage"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintLeft_toRightOf="@id/ibIgnore"
-        app:layout_constraintStart_toEndOf="@id/ibIgnore"
-        android:src="@drawable/ic_message"
-        app:layout_constraintBottom_toTopOf="@id/llBottom"
-        android:layout_margin="@dimen/dp_40"/>
+        android:src="@drawable/ic_message"/>
 
 
-    <ImageButton
+    <ImageView
         android:id="@+id/ibTick"
-        android:layout_width="@dimen/dp_0"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintLeft_toRightOf="@id/ibMessage"
-        app:layout_constraintStart_toEndOf="@id/ibMessage"
-        android:src="@drawable/ic_tick"
-        app:layout_constraintBottom_toTopOf="@id/llBottom"
-        android:layout_margin="@dimen/dp_40"/>
+        android:src="@drawable/ic_tick" />
+</LinearLayout>
 
 
 
@@ -621,40 +619,40 @@
     android:id="@+id/llBottom"
     android:layout_width="match_parent"
     android:layout_height="@dimen/dp_50"
-    android:background="@color/teal_700"
+    android:background="@color/white"
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintLeft_toLeftOf="parent"
     app:layout_constraintRight_toRightOf="parent">
 
-<ImageButton
+<ImageView
     android:id="@+id/ibRefresh"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_weight="1"
     android:src="@drawable/ic_blank_page"/>
 
-    <ImageButton
+    <ImageView
         android:id="@+id/ibLocation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:src="@drawable/ic_pin"/>
 
-    <ImageButton
+    <ImageView
         android:id="@+id/ibHeart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:src="@drawable/ic_heart"/>
 
-    <ImageButton
+    <ImageView
         android:id="@+id/ibChat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:src="@drawable/ic_chat"/>
 
-    <ImageButton
+    <ImageView
         android:id="@+id/ibUser"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

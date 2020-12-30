@@ -1,3 +1,32 @@
 <resources>
     <string name="app_name">Jaumo_App</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+    <string name="help_gender">Help us to match you up with like-minded people.</string>
+    <string name="my_gender">What gender do you identify as ? </string>
+    <string name="filter">Filter </string>
+    <string name="who_do_you_want_to_see">Who do you want to see ? </string>
+    <string name="gender">GENDER</string>
+    <string name="age">AGE</string>
+    <string name="distance">Distance</string>
+    <string name="country">Country</string>
+    <string name="vip_filter">VIP Filter</string>
+    <string name="body_height">BODY HEIGHT</string>
+    <string name="body_type">BODY TYPE</string>
+    <string name="language">LANGUAGE</string>
+    <string name="education">EDUCATION</string>
+    <string name="relation_status">RELATIONSHIP STATUS</string>
+    <string name="looking_for">YOU ARE LOOKING FOR</string>
+    <string name="religion">RELIGION</string>
+    <string name="smoker">SMOKER</string>
+    <string name="drinking">DRINKING</string>
+    <string name="exercise">EXERCISE</string>
+    <string name="tattoos">TATTOOS</string>
+    <string name="pets">PETS</string>
+    <string name="music">MUSIC</string>
+    <string name="diet">DIET</string>
+    <string name="children">CHILDREN</string>
+    <string name="over_1000_people">Over 1000 people</string>
+    <string name="all">All</string>
+    
 </resources>

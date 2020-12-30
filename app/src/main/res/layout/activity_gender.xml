@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GenderActivity">
+
+    <TextView
+        android:id="@+id/tv_bar"
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_10"
+        android:background="@drawable/white_rounded_rect"
+        android:layout_marginLeft="@dimen/dp_40"
+        android:layout_marginRight="@dimen/dp_40"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_30"
+        android:layout_marginBottom="@dimen/dp_30"></TextView>
+
+
+    <TextView
+        android:id="@+id/tv_mygender"
+        android:layout_below="@+id/tv_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_20"
+        android:text="@string/my_gender"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dp_30"
+        android:textStyle="bold"></TextView>
+
+    <TextView
+        android:id="@+id/tv_helpgender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_mygender"
+        android:layout_margin="@dimen/dp_20"
+        android:text="@string/help_gender"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dp_18"></TextView>
+
+    <Button
+        android:id="@+id/btn_female"
+        style="@style/Gender_Button"
+        android:layout_above="@id/btn_male"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:text="@string/female"></Button>
+
+    <Button
+        android:id="@+id/btn_male"
+        style="@style/Gender_Button"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:text="@string/male"></Button>
+
+</RelativeLayout>

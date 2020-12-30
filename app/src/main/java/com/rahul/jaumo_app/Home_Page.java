@@ -21,7 +21,6 @@ public class Home_Page extends AppCompatActivity {
         setContentView(R.layout.activity_home__page);
 
 
-
     }
 
 }

@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CompleteProfileActivity">
+
+    <ImageView
+        android:id="@+id/btn_cross"
+        android:layout_width="38dp"
+        android:layout_height="23dp"
+        android:layout_margin="@dimen/dp_20"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_left_arrow" />
+
+    <TextView
+        android:id="@+id/tvcompleteprofile_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_10"
+        android:layout_margin="@dimen/dp_25"
+        android:drawableStart="@drawable/scroll_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_cross" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_10"
+        android:textColor="@color/green_edit"
+        android:text="@string/complete_your_profile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvcompleteprofile_scroll" />
+
+    <ScrollView
+        android:id="@+id/scroll_id"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/dp_25"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/btn_save"
+        app:layout_constraintTop_toBottomOf="@id/tv_title">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/profile_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_300"
+                    android:src="@drawable/women_eighteen" />
+
+                <Button
+                    style="@style/Buttons"
+                    android:layout_alignBottom="@id/profile_img"
+                    android:text="@string/add_photos"
+                    android:visibility="gone"></Button>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_20"
+                 android:drawableEnd="@drawable/ic_pencil"
+                    android:textColor="@color/blue_main"
+                android:text="@string/guest"
+                android:drawablePadding="@dimen/dp_10"
+                android:textSize="@dimen/dp_20"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_15"
+                android:layout_marginRight="@dimen/dp_15"
+                android:layout_marginTop="@dimen/dp_5"
+                android:drawableStart="@drawable/location"
+                android:drawablePadding="@dimen/dp_10"
+                android:text="@string/begumbazar"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dp_20"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/verify_profile"
+                style="@style/BlueButtons"
+                android:text="@string/verify_profile"></Button>
+
+
+            <TextView
+                android:id="@+id/tv_verify_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/verify_message" />
+            <View
+                android:id="@+id/line1"
+                style="@style/Filter_lineview"></View>
+            <LinearLayout
+                android:id="@+id/ll_hometown"
+                style="@style/Filter_LinearLayout">
+
+                <TextView
+                    style="@style/Filter_TextView"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:drawableEnd="@drawable/ic_pencil"
+                    android:textColor="@color/blue_main"
+                    android:text="@string/hometown"
+                   />
+
+                <TextView
+                    style="@style/Filter_TextView"
+                    android:textColor="@color/green_edit"
+                    android:hint="@string/begumbazar" />
+
+                <View
+                    android:id="@+id/hometown_l1"
+                    style="@style/Filter_lineview"></View>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_profession"
+                style="@style/Filter_LinearLayout">
+
+                <TextView
+                    style="@style/Filter_TextView"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:drawableEnd="@drawable/ic_pencil"
+                    android:textColor="@color/blue_main"
+                    android:text="@string/profession" />
+
+                <TextView
+                    style="@style/Filter_TextView"
+                    android:textColor="@color/green_edit"
+                    android:text="@string/add" />
+
+                <View
+                    android:id="@+id/profession_l1"
+                    style="@style/Filter_lineview"></View>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_looking_for"
+                style="@style/Filter_LinearLayout">
+
+                <TextView
+                    style="@style/Filter_TextView"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:drawableEnd="@drawable/ic_pencil"
+                    android:textColor="@color/blue_main"
+                    android:text="@string/looking_for_only" />
+
+                <TextView
+                    style="@style/Filter_TextView"
+                      android:textColor="@color/green_edit"
+                    android:text="@string/add" />
+
+                <View
+                    android:id="@+id/looking_for_l1"
+                    style="@style/Filter_lineview"></View>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_relation_status"
+                style="@style/Filter_LinearLayout">
+
+                <TextView
+                    style="@style/Filter_TextView"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:drawableEnd="@drawable/ic_pencil"
+                    android:textColor="@color/blue_main"
+                    android:text="@string/education" />
+
+                <TextView
+                    style="@style/Filter_TextView"
+                    android:hint="@string/add" />
+
+                <View
+                    android:id="@+id/ralationstatius_l1"
+                    style="@style/Filter_lineview"></View>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_body_height"
+                style="@style/Filter_LinearLayout">
+
+                <TextView
+                    style="@style/Filter_TextView"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:drawableEnd="@drawable/ic_pencil"
+                    android:textColor="@color/blue_main"
+                    android:text="@string/body_height" />
+
+                <TextView
+                    style="@style/Filter_TextView"
+                    android:hint="@string/add" />
+
+                <View
+                    android:id="@+id/bodyheight_l1"
+                    style="@style/Filter_lineview"></View>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_education"
+                style="@style/Filter_LinearLayout">
+
+                <TextView
+                    style="@style/Filter_TextView"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:drawableEnd="@drawable/ic_pencil"
+                    android:textColor="@color/blue_main"
+                    android:text="@string/education" />
+
+                <TextView
+                    style="@style/Filter_TextView"
+                    android:hint="@string/add" />
+
+                <View
+                    android:id="@+id/education_l1"
+                    style="@style/Filter_lineview"></View>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_smoking"
+                style="@style/Filter_LinearLayout">
+
+                <TextView
+                    style="@style/Filter_TextView"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:drawableEnd="@drawable/ic_pencil"
+                    android:textColor="@color/blue_main"
+                    android:text="@string/smoker" />
+
+                <TextView
+                    style="@style/Filter_TextView"
+                      android:textColor="@color/green_edit"
+                    android:text="@string/add" />
+
+                <View
+                    android:id="@+id/smoking_l1"
+                    style="@style/Filter_lineview"></View>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_religion"
+                style="@style/Filter_LinearLayout">
+
+                <TextView
+                    style="@style/Filter_TextView"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:drawableEnd="@drawable/ic_pencil"
+                    android:textColor="@color/blue_main"
+                    android:text="@string/looking_for" />
+
+                <TextView
+                    style="@style/Filter_TextView"
+                      android:textColor="@color/green_edit"
+                    android:text="@string/add" />
+
+                <View
+                    android:id="@+id/religion_l1"
+                    style="@style/Filter_lineview"></View>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_body_type"
+                style="@style/Filter_LinearLayout">
+
+                <TextView
+                    style="@style/Filter_TextView"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:drawableEnd="@drawable/ic_pencil"
+                    android:textColor="@color/blue_main"
+                    android:text="@string/body_height" />
+
+                <TextView
+                    style="@style/Filter_TextView"
+                    android:hint="@string/add" />
+
+                <View
+                    android:id="@+id/bodytype_l1"
+                    style="@style/Filter_lineview"></View>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_language"
+                style="@style/Filter_LinearLayout">
+
+                <TextView
+                    style="@style/Filter_TextView"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:drawableEnd="@drawable/ic_pencil"
+                    android:textColor="@color/blue_main"
+                    android:text="@string/language" />
+
+                <TextView
+                    style="@style/Filter_TextView"
+                    android:hint="@string/add" />
+
+                <View
+                    android:id="@+id/languale_l1"
+                    style="@style/Filter_lineview"></View>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_drinking"
+                style="@style/Filter_LinearLayout">
+
+                <TextView
+                    style="@style/Filter_TextView"
+                    android:layout_marginTop="@dimen/dp_10"
+                   android:drawableEnd="@drawable/ic_pencil"
+                    android:textColor="@color/blue_main"
+                    android:text="@string/smoker" />
+
+                <TextView
+                    style="@style/Filter_TextView"
+                      android:textColor="@color/green_edit"
+                    android:text="@string/add" />
+
+                <View
+                    android:id="@+id/drinking_l1"
+                    style="@style/Filter_lineview"></View>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_exercise"
+                style="@style/Filter_LinearLayout">
+
+                <TextView
+                    style="@style/Filter_TextView"
+                    android:layout_marginTop="@dimen/dp_10"
+                   android:drawableEnd="@drawable/ic_pencil"
+                    android:textColor="@color/blue_main"
+                    android:text="@string/exercise" />
+
+                <TextView
+                    style="@style/Filter_TextView"
+                      android:textColor="@color/green_edit"
+                    android:text="@string/add" />
+
+                <View
+                    android:id="@+id/exercise_l1"
+                    style="@style/Filter_lineview"></View>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_tattoos"
+                style="@style/Filter_LinearLayout">
+
+                <TextView
+                    style="@style/Filter_TextView"
+                    android:layout_marginTop="@dimen/dp_10"
+                   android:drawableEnd="@drawable/ic_pencil"
+                    android:textColor="@color/blue_main"
+                    android:text="@string/tattoos" />
+
+                <TextView
+                    style="@style/Filter_TextView"
+                      android:textColor="@color/green_edit"
+                    android:text="@string/add" />
+
+                <View
+                    android:id="@+id/tattoos_l1"
+                    style="@style/Filter_lineview"></View>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_pets"
+                style="@style/Filter_LinearLayout">
+
+                <TextView
+                    style="@style/Filter_TextView"
+                    android:layout_marginTop="@dimen/dp_10"
+                   android:drawableEnd="@drawable/ic_pencil"
+                    android:textColor="@color/blue_main"
+                    android:text="@string/pets" />
+
+                <TextView
+                    style="@style/Filter_TextView"
+                      android:textColor="@color/green_edit"
+                    android:text="@string/add" />
+
+                <View
+                    android:id="@+id/pets_l1"
+                    style="@style/Filter_lineview"></View>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_music"
+                style="@style/Filter_LinearLayout">
+
+                <TextView
+                    style="@style/Filter_TextView"
+                    android:layout_marginTop="@dimen/dp_10"
+                   android:drawableEnd="@drawable/ic_pencil"
+                    android:textColor="@color/blue_main"
+                    android:text="@string/music" />
+
+                <TextView
+                    style="@style/Filter_TextView"
+                      android:textColor="@color/green_edit"
+                    android:text="@string/add" />
+
+                <View
+                    android:id="@+id/music_l1"
+                    style="@style/Filter_lineview"></View>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_diet"
+                style="@style/Filter_LinearLayout">
+
+                <TextView
+                    style="@style/Filter_TextView"
+                    android:layout_marginTop="@dimen/dp_10"
+                   android:drawableEnd="@drawable/ic_pencil"
+                    android:textColor="@color/blue_main"
+                    android:text="@string/diet" />
+
+                <TextView
+                    style="@style/Filter_TextView"
+                      android:textColor="@color/green_edit"
+                    android:text="@string/add" />
+
+                <View
+                    android:id="@+id/diet_l1"
+                    style="@style/Filter_lineview"></View>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_children"
+                style="@style/Filter_LinearLayout">
+
+                <TextView
+                    style="@style/Filter_TextView"
+                    android:layout_marginTop="@dimen/dp_10"
+                   android:drawableEnd="@drawable/ic_pencil"
+                    android:textColor="@color/blue_main"
+                    android:text="@string/children" />
+
+                <TextView
+                    style="@style/Filter_TextView"
+                      android:textColor="@color/green_edit"
+                    android:text="@string/add" />
+
+                <View
+                    android:id="@+id/children_l1"
+                    style="@style/Filter_lineview"></View>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -23,9 +23,7 @@ public class Age_Activity extends AppCompatActivity {
         etDay = findViewById(R.id.etDate_day);
         etMonth = findViewById(R.id.etDate_month);
         etYear = findViewById(R.id.etDate_year);
-
         btnAge = findViewById(R.id.btn_ageActivity);
-
         btnAge.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -39,9 +37,28 @@ public class Age_Activity extends AppCompatActivity {
 
     private boolean validateAge() {
         boolean age = true;
-        int day = Integer.parseInt(etDay.getText().toString());
-        int month = Integer.parseInt(etMonth.getText().toString());
-        int year = Integer.parseInt(etYear.getText().toString());
+        int day = 0;
+        int month = 0;
+        int year = 0;
+        if (etDay.getText().toString() != null&&!(etDay.getText().toString().isEmpty())) {
+            day = Integer.parseInt(etDay.getText().toString());
+        } else {
+            etDay.setError("please enter day");
+            age = false;
+        }
+        if (etMonth.getText().toString() != null&&!(etMonth.getText().toString().isEmpty())) {
+            month = Integer.parseInt(etMonth.getText().toString());
+        } else {
+            etMonth.setError("please enter month");
+            age = false;
+        }
+        if (etYear.getText().toString() != null&&!(etYear.getText().toString().isEmpty())) {
+            year = Integer.parseInt(etYear.getText().toString());
+        } else {
+            etYear.setError("please enter Year");
+            age = false;
+        }
+
 
         if (day <= 0 || day > 31) {
             etDay.setError("Enter a valid day");

@@ -1,7 +1,5 @@
 <resources>
     <string name="app_name">Jaumo_App</string>
-    <string name="female">Female</string>
-    <string name="male">Male</string>
     <string name="help_gender">Help us to match you up with like-minded people.</string>
     <string name="my_gender">What gender do you identify as ? </string>
     <string name="filter">Filter </string>
@@ -127,9 +125,15 @@
     <string name="become_vip">Become a VIP</string>
     <string name="login">Log in</string>
     <string name="email_address">E-mail address</string>
-    <string name="password">Password</string>
+    <string name="password">Enter password</string>
     <string name="sign_in">Sign in</string>
     <string name="show">Show</string>
     <string name="create_account">or create a new account</string>
+    <string name="enter_email_address">enter email address</string>
+    <string name="enter_password">password</string>
+    <string name="google_login">Login</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="your_name">Your name</string>
 
 </resources>

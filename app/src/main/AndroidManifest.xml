@@ -34,7 +34,6 @@
         <activity android:name=".Age_Activity" />
             <activity android:name=".Start_Page">
 
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -42,5 +41,4 @@
             </intent-filter>
         </activity>
     </application>
-
 </manifest>

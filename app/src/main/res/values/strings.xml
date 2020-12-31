@@ -120,4 +120,10 @@
     <string name="lovely_joy">* Lovely Joy *</string>
     <string name="kareshma_yadav">* Kareshma Yadav *</string>
     <string name="neeta_singh">* Neeta Singh *</string>
+    <string name="coin_0">0</string>
+    <string name="coins">COINS</string>
+    <string name="settings">Settings</string>
+    <string name="sent_likes">Sent likes</string>
+    <string name="become_vip">Become a VIP</string>
+
 </resources>

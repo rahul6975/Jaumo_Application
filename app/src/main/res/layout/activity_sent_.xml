@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sent_Activity">
+
+    <TextView
+        android:id="@+id/tvSentLikes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_margin="@dimen/dp_30"
+        android:text="@string/sent_likes_settings"
+        android:textSize="@dimen/sp_20"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-condensed"/>
+
+
+    <TextView
+        android:id="@+id/tvDidntReceived"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvSentLikes"
+        android:layout_marginTop="@dimen/dp_50"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="@dimen/dp_30"
+        android:text="Seems like you did'nt received any like yet :("
+        android:textSize="@dimen/sp_30"
+        android:textColor="@color/blue_main"
+        android:fontFamily="monospace"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvDidntReceived"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Let's change that! Don't be shy."
+        android:layout_marginTop="@dimen/dp_50"
+        android:layout_marginStart="@dimen/dp_20"
+        android:textSize="@dimen/sp_25"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@color/voilet"
+        android:textStyle="italic"/>
+
+    <Button
+        android:id="@+id/btnOK"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:background="@drawable/rectangle_red_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="@dimen/dp_40"
+        android:layout_marginStart="@dimen/dp_30"
+        android:layout_marginEnd="@dimen/dp_30"
+        android:text="@string/ok"
+        android:textSize="@dimen/sp_25"
+        android:textStyle="bold"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

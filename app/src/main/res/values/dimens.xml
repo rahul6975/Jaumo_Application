@@ -48,4 +48,7 @@
     <dimen name="dp_156">156dp</dimen>
     <dimen name="dp_242">242dp</dimen>
     <dimen name="dp_88">88dp</dimen>
+    <dimen name="dp_220">220dp</dimen>
+    <dimen name="sp_25">25sp</dimen>
+
 </resources>

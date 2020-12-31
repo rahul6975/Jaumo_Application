@@ -45,6 +45,15 @@ public class Start_Page extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        btnGoogleSignUp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Start_Page.this,Google_Login.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
     private void initUi() {

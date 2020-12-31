@@ -8,11 +8,15 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+
         android:theme="@style/Theme.Jaumo_App" >
         <activity android:name=".Premium_page" >
         </activity>
         <activity android:name=".messages" />
-        <activity android:name=".SignUpWithEmail" />
+
+        android:theme="@style/Theme.Jaumo_App">
+        <activity android:name=".Google_Login"></activity>
+            <activity android:name=".SignUpWithEmail" />
         <activity android:name=".ProfileActivity" />
         <activity android:name=".Location_Filter_Women" />
         <activity android:name=".Location_Filter_Men" />
@@ -29,7 +33,9 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".Interest" />
         <activity android:name=".Age_Activity" />
-        <activity android:name=".Start_Page" >
+            <activity android:name=".Start_Page">
+
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -19,5 +19,6 @@
     <color name="blue_main">#113759</color>
     <color name="green_edit">#00af80</color>
     <color name="white_startup">#ffffff</color>
+    <color name="raspberry">#d21f3c</color>
 
 </resources>

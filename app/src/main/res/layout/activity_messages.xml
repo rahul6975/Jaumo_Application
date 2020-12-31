@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/messages_body"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".messages">
+
+    <TextView
+        android:id="@+id/tvMessageMaintxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_30"
+        android:layout_marginEnd="@dimen/dp_30"
+        android:drawableStart="@drawable/ic_chat"
+        android:drawablePadding="@dimen/dp_25"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="@string/messages"
+        android:textColor="@color/raspberry"
+        android:textColorHighlight="#FFFFFF"
+        android:textSize="@dimen/sp_50"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_message" />
+
+    <ImageView
+        android:id="@+id/imageView_message"
+        android:layout_width="@dimen/dp_25"
+        android:layout_height="@dimen/dp_25"
+        android:layout_marginTop="@dimen/dp_36"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.935"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cross_icon" />
+
+    <Button
+        android:id="@+id/btn_message_back"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sp_50"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_156"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:background="@drawable/buttons_recatngle"
+        android:backgroundTint="@color/raspberry"
+        android:text="@string/go_back"
+        android:textAllCaps="false"
+        android:textColor="@color/white_startup"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_emptybox" />
+
+    <ImageView
+        android:id="@+id/imageView_emptybox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMessageBody"
+        app:srcCompat="@drawable/ic_inbox" />
+
+    <TextView
+        android:id="@+id/tvMessageBody"
+        android:layout_width="@dimen/dp_242"
+        android:layout_height="@dimen/dp_36"
+        android:layout_marginStart="@dimen/dp_100"
+        android:layout_marginTop="@dimen/dp_88"
+        android:layout_marginEnd="@dimen/dp_100"
+        android:text="@string/noMessage"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_18"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMessageMaintxt" />
+
+    <Button
+        android:id="@+id/btn_message_upgrade"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sp_50"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_16"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:background="@drawable/buttons_recatngle"
+        android:backgroundTint="@color/raspberry"
+        android:text="@string/upgrade"
+        android:textAllCaps="false"
+        android:textColor="@color/white_startup"
+        android:textSize="@dimen/sp_18"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_message_back" />
+</androidx.constraintlayout.widget.ConstraintLayout>

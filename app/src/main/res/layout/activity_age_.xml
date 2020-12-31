@@ -6,46 +6,43 @@
     android:layout_height="match_parent"
     tools:context=".Age_Activity">
 
-    <TextView
-        android:id="@+id/tvAge_main"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/signup_askAge"
-        android:textColor="@color/blue_main"
-        android:textSize="@dimen/sp_36"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.274"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.147" />
-
-    <TextView
-        android:id="@+id/tvAge_body"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/dp_16"
-        android:paddingStart="@dimen/dp_10"
-        android:paddingEnd="@dimen/dp_40"
-        android:text="@string/signup_exp"
-        android:textColor="@color/navyblue_body"
-        android:textSize="@dimen/sp_18"
-        app:layout_constraintEnd_toEndOf="@+id/tvAge_main"
-        app:layout_constraintHorizontal_bias="0.059"
-        app:layout_constraintStart_toStartOf="@+id/tvAge_main"
-        app:layout_constraintTop_toBottomOf="@+id/tvAge_main" />
 
     <TextView
         android:id="@+id/tvAge_scroll"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/dp_48"
+        android:layout_margin="@dimen/dp_30"
+        android:background="@color/light_gray"
         android:drawableStart="@drawable/scroll_bar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvAge_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/signup_askAge"
+        android:layout_margin="@dimen/dp_30"
+        android:textColor="@color/blue_main"
+        android:textSize="@dimen/sp_30"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/tvAge_scroll"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvAge_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:text="@string/signup_exp"
+        android:textColor="@color/navyblue_body"
+        android:textSize="@dimen/sp_18"
+        app:layout_constraintStart_toStartOf="@+id/tvAge_main"
+        app:layout_constraintTop_toBottomOf="@+id/tvAge_main" />
+
 
     <EditText
         android:id="@+id/etDate_month"
@@ -96,19 +93,10 @@
 
     <Button
         android:id="@+id/btn_ageActivity"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/dp_64"
-        android:background="@drawable/buttons_recatngle"
-        android:backgroundTint="@color/orange_startup"
+        style="@style/Buttons"
         android:text="@string/btn_age"
-        android:textAllCaps="false"
-        android:textColor="@color/white_startup"
-        android:textSize="@dimen/sp_20"
-        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.452"
         app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

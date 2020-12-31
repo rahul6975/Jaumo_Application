@@ -7,79 +7,56 @@
     tools:context=".Gender">
 
     <TextView
-        android:id="@+id/tvGender_main"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/dp_40"
-        android:layout_marginTop="@dimen/dp_108"
-        android:paddingStart="@dimen/dp_5"
-        android:text="@string/gender_Maintxt"
-        android:textColor="@color/blue_main"
-        android:textSize="@dimen/sp_36"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.005" />
-
-    <TextView
-        android:id="@+id/tvGender_body"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/dp_16"
-        android:paddingStart="@dimen/dp_5"
-        android:paddingEnd="@dimen/dp_50"
-        android:text="@string/gender_Bodytxt"
-        android:textColor="@color/navyblue_body"
-        android:textSize="@dimen/sp_18"
-        app:layout_constraintEnd_toEndOf="@+id/tvGender_main"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/tvGender_main"
-        app:layout_constraintTop_toBottomOf="@+id/tvGender_main" />
-
-    <TextView
         android:id="@+id/tvGender_scroll"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/dp_48"
+        android:layout_margin="@dimen/dp_30"
+        android:background="@color/light_gray"
         android:drawableStart="@drawable/scroll_bar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/tvGender_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_30"
+        android:text="@string/gender_Maintxt"
+        android:textColor="@color/blue_main"
+        android:textSize="@dimen/sp_30"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvGender_scroll" />
+
+    <TextView
+        android:id="@+id/tvGender_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:text="@string/gender_Bodytxt"
+        android:textColor="@color/navyblue_body"
+        android:textSize="@dimen/sp_18"
+        app:layout_constraintStart_toStartOf="@+id/tvGender_main"
+        app:layout_constraintTop_toBottomOf="@+id/tvGender_main" />
+
+
     <Button
         android:id="@+id/btn2_Gender_men"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/dp_32"
-        android:background="@drawable/buttons_recatngle"
-        android:backgroundTint="@color/orange_startup"
+        style="@style/Buttons"
         android:text="@string/genderButton2"
-        android:textAllCaps="false"
-        android:textColor="@color/white_startup"
-        android:textSize="@dimen/sp_20"
-        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btn1_Gender_women"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/dp_24"
-        android:background="@drawable/buttons_recatngle"
-        android:backgroundTint="@color/orange_startup"
+        style="@style/Buttons"
         android:text="@string/genderButton1"
-        android:textAllCaps="false"
-        android:textColor="@color/white_startup"
-        android:textSize="@dimen/sp_20"
-        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/btn2_Gender_men"
         app:layout_constraintEnd_toEndOf="@+id/btn2_Gender_men"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/btn2_Gender_men" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

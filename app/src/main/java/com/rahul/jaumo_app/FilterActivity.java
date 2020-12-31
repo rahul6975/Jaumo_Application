@@ -13,6 +13,8 @@ public class FilterActivity extends AppCompatActivity {
     ImageView crossview;
     LinearLayout ll_gender, ll_age, ll_distance, ll_country;
 
+    private Button btnPeople;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,6 +26,7 @@ public class FilterActivity extends AppCompatActivity {
         crossview = findViewById(R.id.crossview);
         ll_gender = findViewById(R.id.ll_gender);
         ll_age = findViewById(R.id.ll_age);
+        btnPeople = findViewById(R.id.btn_people);
         ll_distance = findViewById(R.id.ll_distance);
         ll_country = findViewById(R.id.ll_country);
         crossview.setOnClickListener(new View.OnClickListener() {
@@ -48,6 +51,13 @@ public class FilterActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 gotoSelectCountry();
+            }
+        });
+
+        btnPeople.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
             }
         });
     }

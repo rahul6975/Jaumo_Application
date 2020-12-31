@@ -7,78 +7,54 @@
     tools:context=".Location">
 
     <TextView
-        android:id="@+id/tvLocation_main"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/dp_40"
-        android:layout_marginTop="@dimen/dp_108"
-        android:text="@string/location_Maintxt"
-        android:textColor="@color/blue_main"
-        android:textSize="@dimen/sp_36"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.005" />
-
-    <TextView
-        android:id="@+id/tvLocation_body"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/dp_16"
-        android:paddingStart="@dimen/dp_5"
-        android:paddingEnd="@dimen/dp_50"
-        android:text="@string/location_Bodytxt"
-        android:textColor="@color/navyblue_body"
-        android:textSize="@dimen/sp_18"
-        app:layout_constraintEnd_toEndOf="@+id/tvLocation_main"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/tvLocation_main"
-        app:layout_constraintTop_toBottomOf="@+id/tvLocation_main" />
-
-    <TextView
         android:id="@+id/tvLocation_scroll"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/dp_48"
+        android:layout_margin="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_30"
         android:drawableStart="@drawable/scroll_bar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
+    <TextView
+        android:id="@+id/tvLocation_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_30"
+        android:text="@string/location_Maintxt"
+        android:textColor="@color/blue_main"
+        android:textSize="@dimen/sp_30"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvLocation_scroll" />
+
+    <TextView
+        android:id="@+id/tvLocation_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:text="@string/location_Bodytxt"
+        android:textColor="@color/navyblue_body"
+        android:textSize="@dimen/sp_18"
+        app:layout_constraintStart_toStartOf="@+id/tvLocation_main"
+        app:layout_constraintTop_toBottomOf="@+id/tvLocation_main" />
+
     <Button
         android:id="@+id/btn1_Location_no"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/dp_32"
-        android:background="@drawable/buttons_recatngle"
-        android:backgroundTint="@color/orange_startup"
+        style="@style/Buttons"
         android:text="@string/locationButton_no"
-        android:textAllCaps="false"
-        android:textColor="@color/white_startup"
-        android:textStyle="bold"
-        android:textSize="@dimen/sp_20"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintBottom_toTopOf="@id/btn2_Location_yes"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btn2_Location_yes"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/dp_24"
-        android:background="@drawable/buttons_recatngle"
-        android:backgroundTint="@color/orange_startup"
+        style="@style/Buttons"
         android:text="@string/locationButon_yes"
-        android:textAllCaps="false"
-        android:textColor="@color/white_startup"
-        android:textStyle="bold"
-        android:textSize="@dimen/sp_20"
-        app:layout_constraintBottom_toTopOf="@+id/btn1_Location_no"
-        app:layout_constraintEnd_toEndOf="@+id/btn1_Location_no"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/btn1_Location_no" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

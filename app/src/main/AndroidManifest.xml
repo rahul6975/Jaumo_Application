@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Jaumo_App">
+
         <activity android:name=".messages"></activity>
+        <activity android:name=".SignUpWithEmail"></activity>
         <activity android:name=".ProfileActivity" />
         <activity android:name=".Location_Filter_Women" />
         <activity android:name=".Location_Filter_Men" />
@@ -18,11 +20,17 @@
         <activity android:name=".SelectCountryActivity" />
         <activity android:name=".SelectDistanceActivity" />
         <activity android:name=".SelectGenderActivity" />
+        <activity android:name=".Location" />
         <activity android:name=".Home_Page" />
-        <activity android:name=".Start_Page" />
+        <activity android:name=".Gender" />
         <activity android:name=".FilterActivity" />
         <activity android:name=".GenderActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Interest" />
+        <activity android:name=".Age_Activity" />
+
+
+        <activity android:name=".Start_Page">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

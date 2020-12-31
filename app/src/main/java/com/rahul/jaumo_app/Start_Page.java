@@ -34,7 +34,7 @@ public class Start_Page extends AppCompatActivity {
         btnSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Start_Page.this, GenderActivity.class);
+                Intent intent = new Intent(Start_Page.this, Gender.class);
                 startActivity(intent);
             }
         });

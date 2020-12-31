@@ -18,10 +18,16 @@
         <activity android:name=".SelectCountryActivity" />
         <activity android:name=".SelectDistanceActivity" />
         <activity android:name=".SelectGenderActivity" />
+        <activity android:name=".Location" />
         <activity android:name=".Home_Page" />
-        <activity android:name=".MainActivity" />
+        <activity android:name=".Gender" />
         <activity android:name=".FilterActivity" />
         <activity android:name=".GenderActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Interest" />
+        <activity android:name=".Age_Activity" />
+
+
         <activity android:name=".Start_Page">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

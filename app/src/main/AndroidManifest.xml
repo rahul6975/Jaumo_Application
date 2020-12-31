@@ -9,10 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Jaumo_App">
-        <activity android:name=".Location_Filter_Women"></activity>
+        <activity android:name=".ProfileActivity"></activity>
+        <activity android:name=".Location_Filter_Women" />
         <activity android:name=".Location_Filter_Men" />
         <activity android:name=".Home_Page_Women" />
-        <activity android:name=".CompleteProfileActivity"></activity>
+        <activity android:name=".CompleteProfileActivity" />
         <activity android:name=".SelectCountryActivity" />
         <activity android:name=".SelectDistanceActivity" />
         <activity android:name=".SelectGenderActivity" />

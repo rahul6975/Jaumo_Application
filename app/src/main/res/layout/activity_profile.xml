@@ -121,6 +121,7 @@
             style="@style/Filter_LinearLayout">
 
             <TextView
+                android:id="@+id/tvSentLikes"
                 style="@style/Filter_TextView"
                 android:layout_marginTop="@dimen/dp_10"
                 android:drawableEnd="@drawable/ic_likes_heart"

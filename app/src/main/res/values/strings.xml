@@ -135,5 +135,6 @@
     <string name="male">Male</string>
     <string name="female">Female</string>
     <string name="your_name">Your name</string>
-
+    <string name="sent_likes_settings">Sent Likes</string>
+    <string name="ok">OK</string>
 </resources>

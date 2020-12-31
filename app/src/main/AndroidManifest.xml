@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Jaumo_App">
-        <activity android:name=".Google_Login"></activity>
+        <activity android:name=".Sent_Activity"></activity>
+        <activity android:name=".Google_Login" />
         <activity android:name=".SignUpWithEmail" />
         <activity android:name=".ProfileActivity" />
         <activity android:name=".Location_Filter_Women" />

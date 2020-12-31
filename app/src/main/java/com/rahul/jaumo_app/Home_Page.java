@@ -84,7 +84,7 @@ public class Home_Page extends AppCompatActivity {
 
     private void initialize()
     {
-         ivFilter = findViewById(R.id.ivFilter);
+         ivFilter = findViewById(R.id.ivFilter_men);
         ivIgnore = findViewById(R.id.ivIgnore);
         ivMessage = findViewById(R.id.ivMessage);
         ibTick = findViewById(R.id.ibTick);

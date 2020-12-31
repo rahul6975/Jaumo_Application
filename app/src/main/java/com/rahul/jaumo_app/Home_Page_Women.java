@@ -75,14 +75,11 @@ public class Home_Page_Women extends AppCompatActivity {
                 Toast.makeText(Home_Page_Women.this,"Nobody liked your profile yet",Toast.LENGTH_LONG).show();
             }
         });
-
-
-
     }
 
     private void initialize()
     {
-        ivFilter = findViewById(R.id.ivFilter);
+        ivFilter = findViewById(R.id.ivFilter_women);
         ivIgnore = findViewById(R.id.ivIgnore);
         ivMessage = findViewById(R.id.ivMessage);
         ibTick = findViewById(R.id.ibTick);

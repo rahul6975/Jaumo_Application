@@ -50,5 +50,7 @@
     <dimen name="dp_88">88dp</dimen>
     <dimen name="dp_220">220dp</dimen>
     <dimen name="sp_25">25sp</dimen>
+    <dimen name="sp_40">40sp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
 
 </resources>

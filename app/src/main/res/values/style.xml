@@ -90,4 +90,27 @@
     </style>
 
 
+
+    <style name="profile_image_display">
+        <item name="android:id">@id/tvImage</item>
+        <item name="android:layout_width">@dimen/dp_200</item>
+        <item name="android:layout_height">@dimen/dp_200</item>
+        <item name="layout_constraintLeft_toLeftOf">parent</item>
+        <item name="layout_constraintRight_toRightOf">parent</item>
+        <item name="layout_constraintTop_toTopOf">parent</item>
+        <item name="android:layout_marginTop">@dimen/dp_60</item>
+    </style>
+
+    <style name="profile_name_display">
+        <item name="android:id">@id/tvName</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="layout_constraintLeft_toLeftOf">parent</item>
+        <item name="layout_constraintRight_toRightOf">parent</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/sp_40</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+
 </resources>

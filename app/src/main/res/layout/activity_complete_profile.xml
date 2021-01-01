@@ -129,7 +129,9 @@
 
                 <TextView
                     style="@style/Filter_TextView"
-                    android:text="@string/begumbazar"
+                    android:id="@+id/hometown"
+                    android:hint="@string/begumbazar"
+                    android:textColorHint="@color/black"
                     android:textColor="@color/green_edit" />
 
                 <View
@@ -151,7 +153,8 @@
 
                 <TextView
                     style="@style/Filter_TextView"
-                    android:text="@string/add"
+                    android:hint="@string/add"
+                    android:textColorHint="@color/green_edit"
                     android:textColor="@color/green_edit" />
 
                 <View
@@ -173,7 +176,8 @@
 
                 <TextView
                     style="@style/Filter_TextView"
-                    android:text="@string/add"
+                    android:hint="@string/add"
+                    android:textColorHint="@color/green_edit"
                     android:textColor="@color/green_edit" />
 
                 <View
@@ -189,14 +193,15 @@
                 <TextView
                     style="@style/Filter_TextView"
                     android:layout_marginTop="@dimen/dp_10"
-                    android:drawableEnd="@drawable/ic_pencil"
+                    android:drawableEnd="@drawable/ic_safety_lock"
                     android:text="@string/relation_status"
                     android:textColor="@color/blue_main" />
 
                 <TextView
                     style="@style/Filter_TextView"
-                    android:text="@string/add"
-                    android:textColor="@color/green_edit"/>
+                      android:text="@string/add"
+                    android:textColor="@color/gray"
+                   />
 
                 <View
                     android:id="@+id/ralationstatius_l1"
@@ -211,14 +216,14 @@
                 <TextView
                     style="@style/Filter_TextView"
                     android:layout_marginTop="@dimen/dp_10"
-                    android:drawableEnd="@drawable/ic_pencil"
+                    android:drawableEnd="@drawable/ic_safety_lock"
                     android:text="@string/body_height"
                     android:textColor="@color/blue_main" />
 
                 <TextView
                     style="@style/Filter_TextView"
-                    android:textColor="@color/green_edit"
-                    android:text="@string/add" />
+                     android:text="@string/add"
+                    />
 
                 <View
                     android:id="@+id/bodyheight_l1"
@@ -233,14 +238,14 @@
                 <TextView
                     style="@style/Filter_TextView"
                     android:layout_marginTop="@dimen/dp_10"
-                    android:drawableEnd="@drawable/ic_pencil"
+                    android:drawableEnd="@drawable/ic_safety_lock"
                     android:text="@string/education"
                     android:textColor="@color/blue_main" />
 
                 <TextView
                     style="@style/Filter_TextView"
-                    android:textColor="@color/green_edit"
-                    android:text="@string/add" />
+                     android:text="@string/add"
+                    />
 
                 <View
                     android:id="@+id/education_l1"
@@ -255,14 +260,14 @@
                 <TextView
                     style="@style/Filter_TextView"
                     android:layout_marginTop="@dimen/dp_10"
-                    android:drawableEnd="@drawable/ic_pencil"
+                    android:drawableEnd="@drawable/ic_safety_lock"
                     android:text="@string/smoker"
                     android:textColor="@color/blue_main" />
 
                 <TextView
                     style="@style/Filter_TextView"
-                    android:text="@string/add"
-                    android:textColor="@color/green_edit" />
+                     android:text="@string/add"
+                    />
 
                 <View
                     android:id="@+id/smoking_l1"
@@ -277,14 +282,14 @@
                 <TextView
                     style="@style/Filter_TextView"
                     android:layout_marginTop="@dimen/dp_10"
-                    android:drawableEnd="@drawable/ic_pencil"
+                    android:drawableEnd="@drawable/ic_safety_lock"
                     android:text="@string/looking_for"
                     android:textColor="@color/blue_main" />
 
                 <TextView
                     style="@style/Filter_TextView"
-                    android:text="@string/add"
-                    android:textColor="@color/green_edit" />
+                     android:text="@string/add"
+                    />
 
                 <View
                     android:id="@+id/religion_l1"
@@ -299,14 +304,14 @@
                 <TextView
                     style="@style/Filter_TextView"
                     android:layout_marginTop="@dimen/dp_10"
-                    android:drawableEnd="@drawable/ic_pencil"
+                    android:drawableEnd="@drawable/ic_safety_lock"
                     android:text="@string/body_type"
                     android:textColor="@color/blue_main" />
 
                 <TextView
                     style="@style/Filter_TextView"
                     android:hint="@string/add"
-                    android:textColor="@color/green_edit"/>
+                   />
 
                 <View
                     android:id="@+id/bodytype_l1"
@@ -321,14 +326,14 @@
                 <TextView
                     style="@style/Filter_TextView"
                     android:layout_marginTop="@dimen/dp_10"
-                    android:drawableEnd="@drawable/ic_pencil"
+                    android:drawableEnd="@drawable/ic_safety_lock"
                     android:text="@string/language"
                     android:textColor="@color/blue_main" />
 
                 <TextView
                     style="@style/Filter_TextView"
-                    android:textColor="@color/green_edit"
-                    android:text="@string/add" />
+                     android:text="@string/add"
+                    />
 
                 <View
                     android:id="@+id/languale_l1"
@@ -343,14 +348,14 @@
                 <TextView
                     style="@style/Filter_TextView"
                     android:layout_marginTop="@dimen/dp_10"
-                    android:drawableEnd="@drawable/ic_pencil"
+                    android:drawableEnd="@drawable/ic_safety_lock"
                     android:text="@string/smoker"
                     android:textColor="@color/blue_main" />
 
                 <TextView
                     style="@style/Filter_TextView"
-                    android:text="@string/add"
-                    android:textColor="@color/green_edit" />
+                     android:text="@string/add"
+                    />
 
                 <View
                     android:id="@+id/drinking_l1"
@@ -365,14 +370,14 @@
                 <TextView
                     style="@style/Filter_TextView"
                     android:layout_marginTop="@dimen/dp_10"
-                    android:drawableEnd="@drawable/ic_pencil"
+                    android:drawableEnd="@drawable/ic_safety_lock"
                     android:text="@string/exercise"
                     android:textColor="@color/blue_main" />
 
                 <TextView
                     style="@style/Filter_TextView"
-                    android:text="@string/add"
-                    android:textColor="@color/green_edit" />
+                     android:text="@string/add"
+                    />
 
                 <View
                     android:id="@+id/exercise_l1"
@@ -387,14 +392,14 @@
                 <TextView
                     style="@style/Filter_TextView"
                     android:layout_marginTop="@dimen/dp_10"
-                    android:drawableEnd="@drawable/ic_pencil"
+                    android:drawableEnd="@drawable/ic_safety_lock"
                     android:text="@string/tattoos"
                     android:textColor="@color/blue_main" />
 
                 <TextView
                     style="@style/Filter_TextView"
-                    android:text="@string/add"
-                    android:textColor="@color/green_edit" />
+                     android:text="@string/add"
+                    />
 
                 <View
                     android:id="@+id/tattoos_l1"
@@ -409,14 +414,15 @@
                 <TextView
                     style="@style/Filter_TextView"
                     android:layout_marginTop="@dimen/dp_10"
-                    android:drawableEnd="@drawable/ic_pencil"
+                    android:drawableEnd="@drawable/ic_safety_lock"
                     android:text="@string/pets"
                     android:textColor="@color/blue_main" />
 
                 <TextView
                     style="@style/Filter_TextView"
-                    android:text="@string/add"
-                    android:textColor="@color/green_edit" />
+                     android:text="@string/add"
+                   
+                   />
 
                 <View
                     android:id="@+id/pets_l1"
@@ -431,14 +437,14 @@
                 <TextView
                     style="@style/Filter_TextView"
                     android:layout_marginTop="@dimen/dp_10"
-                    android:drawableEnd="@drawable/ic_pencil"
+                    android:drawableEnd="@drawable/ic_safety_lock"
                     android:text="@string/music"
                     android:textColor="@color/blue_main" />
 
                 <TextView
                     style="@style/Filter_TextView"
-                    android:text="@string/add"
-                    android:textColor="@color/green_edit" />
+                     android:text="@string/add"
+                    />
 
                 <View
                     android:id="@+id/music_l1"
@@ -453,14 +459,14 @@
                 <TextView
                     style="@style/Filter_TextView"
                     android:layout_marginTop="@dimen/dp_10"
-                    android:drawableEnd="@drawable/ic_pencil"
+                    android:drawableEnd="@drawable/ic_safety_lock"
                     android:text="@string/diet"
                     android:textColor="@color/blue_main" />
 
                 <TextView
                     style="@style/Filter_TextView"
-                    android:text="@string/add"
-                    android:textColor="@color/green_edit" />
+                     android:text="@string/add"
+                    />
 
                 <View
                     android:id="@+id/diet_l1"
@@ -475,14 +481,14 @@
                 <TextView
                     style="@style/Filter_TextView"
                     android:layout_marginTop="@dimen/dp_10"
-                    android:drawableEnd="@drawable/ic_pencil"
+                    android:drawableEnd="@drawable/ic_safety_lock"
                     android:text="@string/children"
                     android:textColor="@color/blue_main" />
 
                 <TextView
                     style="@style/Filter_TextView"
-                    android:text="@string/add"
-                    android:textColor="@color/green_edit" />
+                     android:text="@string/add"
+                    />
 
                 <View
                     android:id="@+id/children_l1"

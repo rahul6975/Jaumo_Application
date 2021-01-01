@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
@@ -16,9 +17,9 @@ public class SignUpWithEmail extends AppCompatActivity {
     EditText et_email, et_password;
     TextView tv_email, tv_password, tv_newaccount, et_name;
     Button btn_signin;
+    ImageView ibDropDownList;
     RadioGroup rgGender;
     RadioButton rbMale;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +27,16 @@ public class SignUpWithEmail extends AppCompatActivity {
         setContentView(R.layout.activity_sign_up_with_email);
         initUI();
 
+        ibDropDownList.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SignUpWithEmail.this, Support.class);
+                startActivity(intent);
+            }
+        });
+
     }
+
 
     private void initUI() {
         rgGender = findViewById(R.id.rgGender);
@@ -34,6 +44,7 @@ public class SignUpWithEmail extends AppCompatActivity {
         et_email = findViewById(R.id.et_email);
         et_password = findViewById(R.id.et_password);
         tv_email = findViewById(R.id.tv_email);
+        ibDropDownList = findViewById(R.id.ivMore);
         tv_password = findViewById(R.id.tv_password);
         btn_signin = findViewById(R.id.btn_signin);
         tv_newaccount = findViewById(R.id.tv_newaccount);
@@ -56,7 +67,7 @@ public class SignUpWithEmail extends AppCompatActivity {
                     RadioButton radioButton = (RadioButton) rgGender.findViewById(radioButtonID);
 
                     String gender = radioButton.getText().toString();
-                    if (gender.equalsIgnoreCase("Feale")) {
+                    if (gender.equalsIgnoreCase("Female")) {
                         Toast.makeText(SignUpWithEmail.this, "Welcome " + et_name.getText().toString(), Toast.LENGTH_LONG).show();
                         Intent intent = new Intent(SignUpWithEmail.this, Home_Page_Women.class);
                         startActivity(intent);
@@ -68,7 +79,6 @@ public class SignUpWithEmail extends AppCompatActivity {
                 }
             }
         });
-
 
     }
 

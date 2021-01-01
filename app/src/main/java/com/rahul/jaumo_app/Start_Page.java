@@ -14,6 +14,7 @@ public class Start_Page extends AppCompatActivity {
     ImageView ivImageBackground;
     Button btnSignUp, btnGoogleSignUp;
     TextView tvPolicy, tvLogin;
+    ImageView  ivDropDownList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,6 +55,14 @@ public class Start_Page extends AppCompatActivity {
             }
         });
 
+        ivDropDownList.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Start_Page.this,Support.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
     private void initUi() {
@@ -62,7 +71,7 @@ public class Start_Page extends AppCompatActivity {
         btnGoogleSignUp = findViewById(R.id.btnGoogleSignUp);
         tvPolicy = findViewById(R.id.tvPolicy);
         tvLogin = findViewById(R.id.tvLogin);
-
+        ivDropDownList = findViewById(R.id.ibDropDownList);
     }
 
 }

@@ -28,11 +28,36 @@
         app:layout_constraintTop_toBottomOf="@+id/ivMore" />
 
     <LinearLayout
-        android:id="@+id/ll_email"
+        android:id="@+id/ll_name"
         style="@style/Filter_LinearLayout"
         android:orientation="vertical"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_title">
+
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/Filter_TextView"
+            android:layout_marginTop="@dimen/dp_20"
+            android:text="@string/your_name"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/et_name"
+            style="@style/Filter_TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_5"
+            android:layout_marginRight="@dimen/dp_20"
+            android:drawableEnd="@drawable/ic_user"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_email"
+        style="@style/Filter_LinearLayout"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_name">
 
         <TextView
             android:id="@+id/tv_email"
@@ -46,7 +71,7 @@
             style="@style/Filter_TextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_5"
             android:layout_marginRight="@dimen/dp_20"
             android:drawableEnd="@drawable/ic_mail"
             android:textColor="@color/black" />
@@ -70,19 +95,60 @@
             style="@style/Filter_TextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_5"
             android:layout_marginRight="@dimen/dp_20"
             android:drawableEnd="@drawable/ic_key"
             android:textColor="@color/black" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_gender"
+        style="@style/Filter_LinearLayout"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_password">
+
+        <RadioGroup
+            app:layout_constraintTop_toBottomOf="@id/ll_password"
+            android:layout_marginTop="@dimen/dp_5"
+            android:layout_marginBottom="@dimen/dp_5"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:id="@+id/rgGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rbMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/male"
+                android:layout_marginTop="@dimen/dp_5"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_20"/>
+
+            <RadioButton
+                android:id="@+id/rbFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/female"
+                android:layout_marginTop="@dimen/dp_5"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_20"/>
+        </RadioGroup>
+
+
     </LinearLayout>
 
-
-
+    </LinearLayout>
     <Button
         android:id="@+id/btn_signin"
-        style="@style/Buttons"
-        android:layout_marginBottom="@dimen/dp_20"
+        style="@style/ButtonsWithOutMargin"
+        android:layout_marginBottom="@dimen/dp_10"
         android:text="@string/sign_in"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_marginLeft="@dimen/dp_20"
         app:layout_constraintBottom_toTopOf="@id/tv_newaccount"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/ll_password"
@@ -94,7 +160,9 @@
         android:id="@+id/tv_newaccount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/dp_20"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_marginBottom="@dimen/dp_10"
         android:text="@string/create_account"
         android:textColor="@color/teal_700"
         app:layout_constraintBottom_toBottomOf="parent"

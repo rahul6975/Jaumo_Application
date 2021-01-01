@@ -26,8 +26,6 @@ public class Google_Login extends AppCompatActivity {
         setContentView(R.layout.activity_google__login);
 
         rgGroup = findViewById(R.id.rgGender);
-
-
         etName = findViewById(R.id.etName);
         etEmail = findViewById(R.id.etEmail);
         etPassword = findViewById(R.id.etGooglePassword);

@@ -20,11 +20,11 @@ public class ProfileActivity extends AppCompatActivity {
     private ImageView ivHome;
     private ImageView ivLocation;
     private ImageView ivHeart;
-    private  ImageView ivChat;
-    private  ImageView ivSetIcon;
-    private  TextView tvSettings;
+    private ImageView ivChat;
+    private ImageView ivSetIcon;
+    private TextView tvSettings;
     private Button btnVip;
-    private  TextView tvCoins;
+    private TextView tvCoins;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,12 +35,12 @@ public class ProfileActivity extends AppCompatActivity {
         tvCoins = findViewById(R.id.tv_coins);
         tvSentLike = findViewById(R.id.tvSentLikes);
         btnVip = findViewById(R.id.btn_vip);
-        btn_ll_completeprofile=findViewById(R.id.btn_ll_completeprofile);
+        btn_ll_completeprofile = findViewById(R.id.btn_ll_completeprofile);
 
         btn_ll_completeprofile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(ProfileActivity.this,CompleteProfileActivity.class);
+                Intent intent = new Intent(ProfileActivity.this, CompleteProfileActivity.class);
                 startActivity(intent);
             }
         });
@@ -52,12 +52,9 @@ public class ProfileActivity extends AppCompatActivity {
         ivSetIcon = findViewById(R.id.ivSetIcon);
 
         String genderFromSignUp = getIntent().getStringExtra("Gender");
-        if(genderFromSignUp.contains("Male"))
-        {
+        if (genderFromSignUp.contains("Male")) {
             ivSetIcon.setImageResource(R.drawable.ic_man);
-        }
-        else if(genderFromSignUp.contains("Female"))
-        {
+        } else if (genderFromSignUp.contains("Female")) {
             ivSetIcon.setImageResource(R.drawable.ic_woman);
         }
 
@@ -65,7 +62,7 @@ public class ProfileActivity extends AppCompatActivity {
         ivChat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ProfileActivity.this,messages.class);
+                Intent intent = new Intent(ProfileActivity.this, messages.class);
                 startActivity(intent);
             }
         });
@@ -73,14 +70,13 @@ public class ProfileActivity extends AppCompatActivity {
         btn_ll_completeprofile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(genderFromSignUp.contains("Male")) {
+                if (genderFromSignUp.contains("Male")) {
                     Intent intent = new Intent(ProfileActivity.this, CompleteProfileActivity.class);
-                    intent.putExtra("Gender","Male");
+                    intent.putExtra("Gender", "Male");
                     startActivity(intent);
-                }
-                else if(genderFromSignUp.contains("Female")) {
+                } else if (genderFromSignUp.contains("Female")) {
                     Intent intent = new Intent(ProfileActivity.this, CompleteProfileActivity.class);
-                    intent.putExtra("Gender","Female");
+                    intent.putExtra("Gender", "Female");
                     startActivity(intent);
                 }
             }
@@ -88,14 +84,14 @@ public class ProfileActivity extends AppCompatActivity {
         tvSentLike.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ProfileActivity.this,Sent_Activity.class);
+                Intent intent = new Intent(ProfileActivity.this, Sent_Activity.class);
                 startActivity(intent);
             }
         });
         ivHeart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(ProfileActivity.this,"Nobody liked your profile yet",Toast.LENGTH_LONG).show();
+                Toast.makeText(ProfileActivity.this, "Nobody liked your profile yet", Toast.LENGTH_LONG).show();
             }
         });
 

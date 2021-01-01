@@ -142,5 +142,8 @@
     <string name="sent_likes_settings">Sent Likes</string>
     <string name="ok">OK</string>
     <string name="want">you want.</string>
+    <string name="India">India</string>
+    <string name="enter_location">Enter Location</string>
+    <string name="where_do_you_live">Where do you live ?</string>
 
 </resources>

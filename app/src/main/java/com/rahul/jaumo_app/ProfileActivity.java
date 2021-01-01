@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.net.wifi.hotspot2.pps.HomeSp;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -22,6 +23,8 @@ public class ProfileActivity extends AppCompatActivity {
     private  ImageView ivChat;
     private  ImageView ivSetIcon;
     private  TextView tvSettings;
+    private Button btnVip;
+    private  TextView tvCoins;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +32,9 @@ public class ProfileActivity extends AppCompatActivity {
         setContentView(R.layout.activity_profile);
 
         tvCompleteProfile = findViewById(R.id.tv_complete_profile);
+        tvCoins = findViewById(R.id.tv_coins);
         tvSentLike = findViewById(R.id.tvSentLikes);
+        btnVip = findViewById(R.id.btn_vip);
         btn_ll_completeprofile=findViewById(R.id.btn_ll_completeprofile);
 
         btn_ll_completeprofile.setOnClickListener(new View.OnClickListener() {
@@ -98,6 +103,22 @@ public class ProfileActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(ProfileActivity.this, homePage_Setting.class);
+                startActivity(intent);
+            }
+        });
+
+        btnVip.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ProfileActivity.this, Premium_page.class);
+                startActivity(intent);
+            }
+        });
+
+        tvCoins.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ProfileActivity.this, Premium_page.class);
                 startActivity(intent);
             }
         });

@@ -21,7 +21,6 @@ public class Home_Page_Women extends AppCompatActivity {
     private ImageView ibHeart;
     private ImageView ibChat;
     private ImageView ibUser;
-
     private TextView tvWName1;
     private TextView tvWName2;
     private TextView tvWName3;
@@ -269,6 +268,14 @@ public class Home_Page_Women extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Home_Page_Women.this,Neeta_Singh.class);
+                startActivity(intent);
+            }
+        });
+
+        ivMessage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Home_Page_Women.this,Premium_page.class);
                 startActivity(intent);
             }
         });

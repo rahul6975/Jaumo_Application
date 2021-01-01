@@ -94,6 +94,14 @@ public class Home_Page extends AppCompatActivity {
             }
         });
 
+        ivMessage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Home_Page.this,Premium_page.class);
+                startActivity(intent);
+            }
+        });
+
         ibHeart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -31,9 +31,9 @@
     <ImageView
         android:id="@+id/ibChat"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="17dp"
         android:layout_weight="1"
-        android:src="@drawable/ic_chat"/>
+        android:src="@drawable/ic_chat" />
 
     <ImageView
         android:id="@+id/ibUser"

@@ -50,6 +50,7 @@ public class Home_Page_Women extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Home_Page_Women.this , ProfileActivity.class);
+                intent.putExtra("Gender","Female");
                 startActivity(intent);
             }
         });
@@ -73,6 +74,14 @@ public class Home_Page_Women extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(Home_Page_Women.this,"Nobody liked your profile yet",Toast.LENGTH_LONG).show();
+            }
+        });
+
+        ibChat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Home_Page_Women.this,messages.class);
+                startActivity(intent);
             }
         });
     }

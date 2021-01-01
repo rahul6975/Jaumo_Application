@@ -45,12 +45,14 @@ public class Google_Login extends AppCompatActivity {
                     {
                         Toast.makeText(Google_Login.this,"Welcome "+etName.getText().toString(),Toast.LENGTH_LONG).show();
                         Intent intent = new Intent(Google_Login.this,Home_Page.class);
+//                        intent.putExtra("Google","Male");
                         startActivity(intent);
                     }
                     else if(gender.contains("Female"))
                     {
                         Toast.makeText(Google_Login.this,"Welcome "+etName.getText().toString(),Toast.LENGTH_LONG).show();
                         Intent intent = new Intent(Google_Login.this,Home_Page_Women.class);
+//                        intent.putExtra("Google","Female");
                         startActivity(intent);
                     }
 

@@ -90,7 +90,7 @@
                 android:layout_marginLeft="@dimen/dp_15"
                 android:layout_marginRight="@dimen/dp_15"
                 android:layout_marginTop="@dimen/dp_5"
-                android:drawableStart="@drawable/location"
+                android:drawableStart="@drawable/location_png"
                 android:drawablePadding="@dimen/dp_10"
                 android:text="@string/begumbazar"
                 android:textColor="@color/black"

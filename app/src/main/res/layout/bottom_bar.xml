@@ -9,31 +9,31 @@
 
     <ImageView
         android:id="@+id/ibRefresh"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="@dimen/dp_40"
         android:layout_weight="1"
-        android:src="@drawable/ic_blank_page"/>
+        android:src="@drawable/home_page_refresh"/>
 
     <ImageView
         android:id="@+id/ibLocation"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="@dimen/dp_40"
         android:layout_weight="1"
-        android:src="@drawable/ic_pin"/>
+        android:src="@drawable/location_png"/>
 
     <ImageView
         android:id="@+id/ibHeart"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="@dimen/dp_40"
         android:layout_weight="1"
-        android:src="@drawable/ic_heart"/>
+        android:src="@drawable/heart_png"/>
 
     <ImageView
         android:id="@+id/ibChat"
-        android:layout_width="wrap_content"
-        android:layout_height="17dp"
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="@dimen/dp_40"
         android:layout_weight="1"
-        android:src="@drawable/ic_chat" />
+        android:src="@drawable/chat" />
 
     <ImageView
         android:id="@+id/ibUser"

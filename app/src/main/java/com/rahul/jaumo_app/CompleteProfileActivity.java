@@ -13,11 +13,21 @@ public class CompleteProfileActivity extends AppCompatActivity {
     LinearLayout ll_hometown, ll_profession, ll_looking_for;
     TextView hometown, profession, looking_for;
     private ImageView ivSetIcon;
+    private ImageView ivBack;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_complete_profile);
+
+        ivBack = findViewById(R.id.btn_cross);
+
+        ivBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
 
         ivSetIcon = findViewById(R.id.profile_img);
         initUI();

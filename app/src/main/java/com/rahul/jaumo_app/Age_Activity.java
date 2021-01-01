@@ -56,7 +56,7 @@ public class Age_Activity extends AppCompatActivity {
 
             @Override
             public boolean onKey(View v, int keyCode, KeyEvent event) {
-                if (etYear.getText().length() == 4&&validateAge())
+                if (etYear.getText().length() == 4 && validateAge())
                     calculateAge();
                 return false;
             }

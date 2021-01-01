@@ -66,9 +66,9 @@
                 android:id="@+id/ivSetIcon"
                 android:layout_width="@dimen/dp_120"
                 android:layout_height="@dimen/dp_120"
-                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
                 android:layout_marginTop="@dimen/dp_50"
-                android:src="@drawable/women_eighteen" />
+                android:src="@drawable/ic_profile_pic" />
 
             <TextView
                 android:layout_width="21dp"

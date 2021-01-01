@@ -60,13 +60,13 @@
                     android:id="@+id/profile_img"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/dp_300"
-                    android:src="@drawable/women_eighteen" />
+                    android:src="@drawable/ic_profile_pic" />
 
                 <Button
                     style="@style/Buttons"
                     android:layout_alignBottom="@id/profile_img"
                     android:text="@string/add_photos"
-                    android:visibility="gone"></Button>
+                    android:visibility="gone"/>
 
             </RelativeLayout>
 
@@ -102,7 +102,7 @@
             <Button
                 android:id="@+id/verify_profile"
                 style="@style/BlueButtons"
-                android:text="@string/verify_profile"></Button>
+                android:text="@string/verify_profile"/>
 
 
             <TextView
@@ -114,7 +114,7 @@
 
             <View
                 android:id="@+id/line1"
-                style="@style/Filter_lineview"></View>
+                style="@style/Filter_lineview"/>
 
             <LinearLayout
                 android:id="@+id/ll_hometown"
@@ -136,7 +136,7 @@
 
                 <View
                     android:id="@+id/hometown_l1"
-                    style="@style/Filter_lineview"></View>
+                    style="@style/Filter_lineview"/>
 
             </LinearLayout>
 
@@ -159,7 +159,7 @@
 
                 <View
                     android:id="@+id/profession_l1"
-                    style="@style/Filter_lineview"></View>
+                    style="@style/Filter_lineview"/>
 
             </LinearLayout>
 
@@ -182,7 +182,7 @@
 
                 <View
                     android:id="@+id/looking_for_l1"
-                    style="@style/Filter_lineview"></View>
+                    style="@style/Filter_lineview"/>
 
             </LinearLayout>
 
@@ -205,7 +205,7 @@
 
                 <View
                     android:id="@+id/ralationstatius_l1"
-                    style="@style/Filter_lineview"></View>
+                    style="@style/Filter_lineview"/>
 
             </LinearLayout>
 
@@ -227,7 +227,7 @@
 
                 <View
                     android:id="@+id/bodyheight_l1"
-                    style="@style/Filter_lineview"></View>
+                    style="@style/Filter_lineview"/>
 
             </LinearLayout>
 
@@ -249,7 +249,7 @@
 
                 <View
                     android:id="@+id/education_l1"
-                    style="@style/Filter_lineview"></View>
+                    style="@style/Filter_lineview"/>
 
             </LinearLayout>
 
@@ -271,7 +271,7 @@
 
                 <View
                     android:id="@+id/smoking_l1"
-                    style="@style/Filter_lineview"></View>
+                    style="@style/Filter_lineview"/>
 
             </LinearLayout>
 
@@ -293,7 +293,7 @@
 
                 <View
                     android:id="@+id/religion_l1"
-                    style="@style/Filter_lineview"></View>
+                    style="@style/Filter_lineview"/>
 
             </LinearLayout>
 
@@ -315,8 +315,7 @@
 
                 <View
                     android:id="@+id/bodytype_l1"
-                    style="@style/Filter_lineview"></View>
-
+                    style="@style/Filter_lineview"/>
             </LinearLayout>
 
             <LinearLayout
@@ -337,7 +336,7 @@
 
                 <View
                     android:id="@+id/languale_l1"
-                    style="@style/Filter_lineview"></View>
+                    style="@style/Filter_lineview"/>
 
             </LinearLayout>
 
@@ -359,7 +358,7 @@
 
                 <View
                     android:id="@+id/drinking_l1"
-                    style="@style/Filter_lineview"></View>
+                    style="@style/Filter_lineview"/>
 
             </LinearLayout>
 
@@ -381,8 +380,7 @@
 
                 <View
                     android:id="@+id/exercise_l1"
-                    style="@style/Filter_lineview"></View>
-
+                    style="@style/Filter_lineview"/>
             </LinearLayout>
 
             <LinearLayout
@@ -403,7 +401,7 @@
 
                 <View
                     android:id="@+id/tattoos_l1"
-                    style="@style/Filter_lineview"></View>
+                    style="@style/Filter_lineview"/>
 
             </LinearLayout>
 
@@ -426,7 +424,7 @@
 
                 <View
                     android:id="@+id/pets_l1"
-                    style="@style/Filter_lineview"></View>
+                    style="@style/Filter_lineview"/>
 
             </LinearLayout>
 
@@ -448,7 +446,7 @@
 
                 <View
                     android:id="@+id/music_l1"
-                    style="@style/Filter_lineview"></View>
+                    style="@style/Filter_lineview"/>
 
             </LinearLayout>
 
@@ -470,7 +468,7 @@
 
                 <View
                     android:id="@+id/diet_l1"
-                    style="@style/Filter_lineview"></View>
+                    style="@style/Filter_lineview"/>
 
             </LinearLayout>
 
@@ -492,7 +490,7 @@
 
                 <View
                     android:id="@+id/children_l1"
-                    style="@style/Filter_lineview"></View>
+                    style="@style/Filter_lineview"/>
 
             </LinearLayout>
 

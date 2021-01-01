@@ -13,6 +13,7 @@
         android:layout_margin="@dimen/dp_30"
         android:background="@color/light_gray"
         android:drawableStart="@drawable/scroll_bar"
+        android:drawablePadding="@dimen/dp_10"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

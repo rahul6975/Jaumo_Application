@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -33,6 +34,40 @@ public class Age_Activity extends AppCompatActivity {
                 }
             }
         });
+        etDay.setOnKeyListener(new View.OnKeyListener() {
+
+            @Override
+            public boolean onKey(View v, int keyCode, KeyEvent event) {
+                if (etDay.getText().length() == 2)
+                    etMonth.requestFocus();
+                return false;
+            }
+        });
+        etMonth.setOnKeyListener(new View.OnKeyListener() {
+
+            @Override
+            public boolean onKey(View v, int keyCode, KeyEvent event) {
+                if (etMonth.getText().length() == 2)
+                    etYear.requestFocus();
+                return false;
+            }
+        });
+        etYear.setOnKeyListener(new View.OnKeyListener() {
+
+            @Override
+            public boolean onKey(View v, int keyCode, KeyEvent event) {
+                if (etYear.getText().length() == 4&&validateAge())
+                    calculateAge();
+                return false;
+            }
+        });
+    }
+
+    private void calculateAge() {
+        int current_age = 2021;
+        int Dob = Integer.parseInt(etYear.getText().toString());
+        String age = String.valueOf(current_age - Dob);
+        btnAge.setText("I'm "+age);
     }
 
     private boolean validateAge() {
@@ -40,19 +75,19 @@ public class Age_Activity extends AppCompatActivity {
         int day = 0;
         int month = 0;
         int year = 0;
-        if (etDay.getText().toString() != null&&!(etDay.getText().toString().isEmpty())) {
+        if (etDay.getText().toString() != null && !(etDay.getText().toString().isEmpty())) {
             day = Integer.parseInt(etDay.getText().toString());
         } else {
             etDay.setError("please enter day");
             age = false;
         }
-        if (etMonth.getText().toString() != null&&!(etMonth.getText().toString().isEmpty())) {
+        if (etMonth.getText().toString() != null && !(etMonth.getText().toString().isEmpty())) {
             month = Integer.parseInt(etMonth.getText().toString());
         } else {
             etMonth.setError("please enter month");
             age = false;
         }
-        if (etYear.getText().toString() != null&&!(etYear.getText().toString().isEmpty())) {
+        if (etYear.getText().toString() != null && !(etYear.getText().toString().isEmpty())) {
             year = Integer.parseInt(etYear.getText().toString());
         } else {
             etYear.setError("please enter Year");

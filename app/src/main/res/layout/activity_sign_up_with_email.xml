@@ -35,6 +35,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_title">
 
         <TextView
+            android:id="@+id/tv_email"
             style="@style/Filter_TextView"
             android:layout_marginTop="@dimen/dp_20"
             android:text="@string/email_address"
@@ -50,29 +51,32 @@
             android:drawableEnd="@drawable/ic_mail"
             android:textColor="@color/black" />
     </LinearLayout>
-
     <LinearLayout
         android:id="@+id/ll_password"
         style="@style/Filter_LinearLayout"
+        android:orientation="vertical"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ll_email">
 
         <TextView
+            android:id="@+id/tv_password"
             style="@style/Filter_TextView"
             android:layout_marginTop="@dimen/dp_20"
-            android:textColor="@color/black"
-            android:text="@string/password" />
+            android:text="@string/password"
+            android:textColor="@color/black" />
 
         <EditText
             android:id="@+id/et_password"
+            style="@style/Filter_TextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/dp_10"
             android:layout_marginRight="@dimen/dp_20"
             android:drawableEnd="@drawable/ic_key"
             android:textColor="@color/black" />
-
     </LinearLayout>
+
+
 
     <Button
         android:id="@+id/btn_signin"

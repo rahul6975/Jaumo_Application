@@ -100,13 +100,14 @@
 
         <View
             android:id="@+id/settings_l1"
-            style="@style/Filter_Fulllineview"></View>
+            style="@style/Filter_Fulllineview"/>
 
         <LinearLayout
             android:id="@+id/ll_settings"
             style="@style/Filter_LinearLayout">
 
             <TextView
+                android:id="@+id/tvSettings"
                 style="@style/Filter_TextView"
                 android:layout_marginTop="@dimen/dp_10"
                 android:drawableEnd="@drawable/ic_settings"
@@ -114,7 +115,7 @@
 
             <View
                 android:id="@+id/likes_l1"
-                style="@style/Filter_lineview"></View>
+                style="@style/Filter_lineview"/>
 
         </LinearLayout>
 

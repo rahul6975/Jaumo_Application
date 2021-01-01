@@ -3,6 +3,7 @@ package com.rahul.jaumo_app;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.wifi.hotspot2.pps.HomeSp;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -18,6 +19,7 @@ public class ProfileActivity extends AppCompatActivity {
     private ImageView ivHeart;
     private  ImageView ivChat;
     private  ImageView ivSetIcon;
+    private  TextView tvSettings;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +32,7 @@ public class ProfileActivity extends AppCompatActivity {
         ivLocation = findViewById(R.id.ibLocation);
         ivHeart = findViewById(R.id.ibHeart);
         ivChat = findViewById(R.id.ibChat);
+        tvSettings = findViewById(R.id.tvSettings);
         ivSetIcon = findViewById(R.id.ivSetIcon);
 
         String genderFromSignUp = getIntent().getStringExtra("Gender");
@@ -79,5 +82,14 @@ public class ProfileActivity extends AppCompatActivity {
                 Toast.makeText(ProfileActivity.this,"Nobody liked your profile yet",Toast.LENGTH_LONG).show();
             }
         });
+
+        tvSettings.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ProfileActivity.this, homePage_Setting.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }

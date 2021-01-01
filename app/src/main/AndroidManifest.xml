@@ -10,7 +10,7 @@
         android:supportsRtl="true"
 
         android:theme="@style/Theme.Jaumo_App">
-        <activity android:name=".Start_Page"></activity>
+        <activity android:name=".Support"></activity>
         <activity android:name=".Account" />
         <activity android:name=".homePage_Setting" />
         <activity android:name=".messages" />
@@ -35,7 +35,7 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".Interest" />
         <activity android:name=".Age_Activity" />
-            <activity android:name=".Support">
+            <activity android:name=".Start_Page">
 
                     <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

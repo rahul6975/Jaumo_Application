@@ -14,7 +14,7 @@
         <activity android:name=".Account" />
         <activity android:name=".homePage_Setting" />
         <activity android:name=".messages" />
-        <activity android:name=".Premium_page" />
+        <activity android:name=".Support" />
         <activity android:name=".Info_terms" />
             <activity android:name=".Sent_Activity"/>
             <activity android:name=".Google_Login" />
@@ -35,7 +35,7 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".Interest" />
         <activity android:name=".Age_Activity" />
-            <activity android:name=".Support">
+            <activity android:name=".Premium_page">
 
                     <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

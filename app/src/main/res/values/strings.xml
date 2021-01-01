@@ -141,4 +141,6 @@
     <string name="your_name">Your name</string>
     <string name="sent_likes_settings">Sent Likes</string>
     <string name="ok">OK</string>
+    <string name="want">you want.</string>
+
 </resources>

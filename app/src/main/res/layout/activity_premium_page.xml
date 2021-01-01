@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:elevation="@dimen/dp_40"
+    android:elevation="@dimen/dp_80"
     android:layout_marginLeft="@dimen/dp_20"
     android:layout_marginRight="@dimen/dp_20"
     android:layout_height="wrap_content"
@@ -12,17 +12,93 @@
     tools:context=".Premium_page">
 
   <TextView
-      android:id="@+id/textView"
+      android:id="@+id/textView_premiere"
       android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:layout_marginStart="@dimen/dp_40"
-
-      android:layout_marginEnd="@dimen/dp_40"
-      android:text="Like as many People as you want"
+      android:layout_height="@dimen/dp_390"
+      android:drawableTop="@drawable/ic_heart_shape_outline_with_lining_at_right_edge"
+      android:paddingStart="@dimen/dp_36"
+      android:paddingEnd="@dimen/dp_20"
+      android:text="Like as many People as "
       android:textColor="@color/blue_main"
-      android:textSize="30sp"
+      android:textSize="@dimen/sp_28"
+      android:textStyle="bold"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintHorizontal_bias="0.433"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent" />
+
+  <TextView
+      android:id="@+id/premiere_want"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/dp_85"
+      android:paddingStart="@dimen/dp_130"
+      android:text="@string/want"
+      android:textColor="@color/blue_main"
+      android:textSize="@dimen/sp_25"
+      android:textStyle="bold" />
+
+  <TextView
+      android:id="@+id/premiere_unlimited"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/dp_120"
+      android:paddingStart="@dimen/dp_100"
+      android:text="Get unlimited likes"
+      android:textColor="@color/raspberry"
+      android:textSize="@dimen/dp_20"
+      android:textStyle="bold" />
+
+
+  <Button
+      android:id="@+id/button_premiere"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/dp_40"
+      android:layout_marginStart="@dimen/dp_20"
+      android:layout_marginTop="@dimen/dp_340"
+      android:layout_marginEnd="@dimen/dp_20"
+      android:background="@drawable/buttons_recatngle"
+      android:backgroundTint="@color/orange_startup"
+      android:text="Coming soon"
+      android:textAllCaps="false"
+      android:textColor="@color/white_startup"
+      android:textSize="@dimen/sp_20"
+      android:textStyle="bold" />
+
+  <ImageView
+
+      android:id="@+id/imageView_premiumOffer"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/dp_108"
+      android:layout_marginTop="170dp"
+      app:srcCompat="@drawable/ic_ribbon" />
+
+  <TextView
+      android:id="@+id/tV_price"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/dp_320"
+      android:paddingStart="@dimen/dp_80"
+      android:shadowColor="#352B2B"
+      android:text="Upto 50% off! Avail @999/ year!"
+      android:textColor="@color/black"
+      android:textColorHighlight="@color/white_startup" />
+
+  <TextView
+      android:id="@+id/textView_hurry"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/dp_20"
+      android:layout_marginTop="@dimen/dp_150"
+      android:text="Hurry !! Limited period offer for MASAI Organisation!"
+      android:textColor="@color/black" />
+
+  <ImageView
+      android:id="@+id/imageViewPremiumClose"
+      android:layout_width="@dimen/dp_29"
+      android:layout_height="@dimen/dp_25"
+      android:layout_marginLeft="@dimen/dp_320"
+      android:layout_marginRight="@dimen/dp_10"
+      app:srcCompat="@drawable/cross_icon" />
 </androidx.cardview.widget.CardView>

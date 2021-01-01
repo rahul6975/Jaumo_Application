@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/start_page_bg"
     tools:context=".Home_Page">
 
     <HorizontalScrollView
@@ -626,62 +627,13 @@
 
     </include>
 
-
-<!--<LinearLayout-->
-<!--    android:id="@+id/llBottom"-->
-<!--    android:layout_width="match_parent"-->
-<!--    android:layout_height="@dimen/dp_50"-->
-<!--    android:background="@color/white"-->
-<!--    app:layout_constraintBottom_toBottomOf="parent"-->
-<!--    app:layout_constraintLeft_toLeftOf="parent"-->
-<!--    app:layout_constraintRight_toRightOf="parent">-->
-
-<!--<ImageView-->
-<!--    android:id="@+id/ibRefresh"-->
-<!--    android:layout_width="wrap_content"-->
-<!--    android:layout_height="wrap_content"-->
-<!--    android:layout_weight="1"-->
-<!--    android:src="@drawable/ic_blank_page"/>-->
-
-<!--    <ImageView-->
-<!--        android:id="@+id/ibLocation"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_weight="1"-->
-<!--        android:src="@drawable/ic_pin"/>-->
-
-<!--    <ImageView-->
-<!--        android:id="@+id/ibHeart"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_weight="1"-->
-<!--        android:src="@drawable/ic_heart"/>-->
-
-<!--    <ImageView-->
-<!--        android:id="@+id/ibChat"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_weight="1"-->
-<!--        android:src="@drawable/ic_chat"/>-->
-
-<!--    <ImageView-->
-<!--        android:id="@+id/ibUser"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_weight="1"-->
-<!--        android:src="@drawable/ic_user"/>-->
-<!--</LinearLayout>-->
-
     <ImageView
         android:id="@+id/ivFilter_men"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_filters"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginTop="@dimen/dp_50"
+        android:src="@drawable/icon_filter"
         android:layout_marginLeft="@dimen/dp_10"
-        android:background="@drawable/filter_bg"/>
-
-
+        android:layout_width="@dimen/dp_50"
+        android:layout_height="@dimen/dp_50"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

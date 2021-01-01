@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.content.res.TypedArray;
 import android.media.Image;
 import android.os.Bundle;
+import android.text.method.CharacterPickerDialog;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -53,6 +54,7 @@ public class Home_Page extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Home_Page.this , ProfileActivity.class);
+                intent.putExtra("Gender","Male");
                 startActivity(intent);
             }
         });
@@ -75,6 +77,14 @@ public class Home_Page extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(Home_Page.this,"Nobody liked your profile yet",Toast.LENGTH_LONG).show();
+            }
+        });
+
+        ibChat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Home_Page.this,messages.class);
+                startActivity(intent);
             }
         });
 

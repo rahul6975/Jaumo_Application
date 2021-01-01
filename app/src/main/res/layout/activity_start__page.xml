@@ -4,15 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/voilet"
+    android:background="@drawable/start_page_bg"
     tools:context=".Start_Page">
 
-    <ImageButton
+    <ImageView
         android:id="@+id/ibDropDownList"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/dp_20"
-        android:background="@color/voilet"
         android:src="@drawable/ic_more"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -36,6 +35,7 @@
         android:layout_marginTop="@dimen/dp_50"
         android:drawableStart="@drawable/bg_image"
         android:text="JAUMO"
+        android:fontFamily="sans-serif-condensed"
         android:textColor="@color/white"
         android:textSize="@dimen/sp_45"
         app:layout_constraintEnd_toEndOf="parent"
@@ -50,6 +50,7 @@
         android:text="@string/find_your_someone"
         android:textColor="@color/white"
         android:textSize="@dimen/sp_22"
+        android:fontFamily="sans-serif-condensed"
         app:layout_constraintStart_toStartOf="@id/tvHeading"
         app:layout_constraintTop_toBottomOf="@id/tvHeading" />
 
@@ -84,7 +85,7 @@
         android:text="Sign up with Google"
         android:textSize="@dimen/sp_20"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@id/tvPolicy"></Button>
+        app:layout_constraintBottom_toTopOf="@id/tvPolicy"/>
 
     <TextView
         android:id="@+id/tvPolicy"

@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@drawable/start_page_bg"
     android:layout_height="match_parent"
     tools:context=".Sent_Activity">
 
@@ -15,7 +16,7 @@
         android:layout_margin="@dimen/dp_30"
         android:text="@string/sent_likes_settings"
         android:textSize="@dimen/sp_20"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:fontFamily="sans-serif-condensed"/>
 
 
@@ -30,7 +31,7 @@
         android:layout_marginStart="@dimen/dp_30"
         android:text="Seems like you did'nt received any like yet :("
         android:textSize="@dimen/sp_30"
-        android:textColor="@color/blue_main"
+        android:textColor="@color/white"
         android:fontFamily="monospace"/>
 
     <TextView
@@ -43,7 +44,7 @@
         android:layout_marginStart="@dimen/dp_20"
         android:textSize="@dimen/sp_25"
         android:fontFamily="sans-serif-light"
-        android:textColor="@color/voilet"
+        android:textColor="@color/white"
         android:textStyle="italic"/>
 
     <Button

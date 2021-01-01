@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.rahul.jaumo_app" >
+    package="com.rahul.jaumo_app">
 
     <application
         android:allowBackup="true"
@@ -8,13 +8,16 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Jaumo_App" >
-        <activity android:name=".Premium_page" >
-        </activity>
+
+        android:theme="@style/Theme.Jaumo_App">
+        <activity android:name=".Support"></activity>
+        <activity android:name=".Account" />
+        <activity android:name=".homePage_Setting" />
         <activity android:name=".messages" />
-<!--        android:theme="@style/Theme.Jaumo_App">-->
-        <activity android:name=".Sent_Activity"/>
-        <activity android:name=".Google_Login" />
+        <activity android:name=".Premium_page" />
+        <activity android:name=".Info_terms" />
+            <activity android:name=".Sent_Activity"/>
+            <activity android:name=".Google_Login" />
         <activity android:name=".SignUpWithEmail" />
         <activity android:name=".ProfileActivity" />
         <activity android:name=".Location_Filter_Women" />
@@ -34,13 +37,11 @@
         <activity android:name=".Age_Activity" />
             <activity android:name=".Start_Page">
 
-
-            <intent-filter>
+                    <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
     </application>
-
 </manifest>

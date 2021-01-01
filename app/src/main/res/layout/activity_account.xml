@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Account">
+
+
+    <ImageView
+        android:id="@+id/AccountCrossview"
+        android:layout_width="28dp"
+        android:layout_height="18dp"
+        android:layout_margin="@dimen/dp_20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cross_icon" />
+
+    <TextView
+        android:id="@+id/tVAccountMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_25"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="@dimen/dp_25"
+        android:text="Account"
+        android:drawableLeft="@drawable/ic_settings__2_"
+        android:drawablePadding="@dimen/dp_10"
+        android:textColor="@color/blue_main"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AccountCrossview" />
+
+    <TextView
+        android:id="@+id/textViewAccount_EMAIL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="20dp"
+        android:drawableEnd="@drawable/ic_mail__1_"
+        android:text="E-Mail"
+        android:textColor="@color/navyblue_body"
+        android:textSize="@dimen/sp_20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.152"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tVAccountMain" />
+
+
+
+    <TextView
+        android:id="@+id/textViewLine"
+        android:layout_width="0dp"
+        android:layout_height="3dp"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:background="@drawable/buttons_recatngle"
+        android:backgroundTint="@color/gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAccount_EMAIL" />
+
+    <TextView
+        android:id="@+id/textViewAccount_PASSWORD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="20dp"
+        android:drawableEnd="@drawable/ic_inclined_key"
+        android:text="Password"
+        android:textColor="@color/navyblue_body"
+        android:textSize="@dimen/sp_20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.152"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAccount_EMAIL" />
+
+
+
+    <TextView
+        android:id="@+id/textViewLine2"
+        android:layout_width="0dp"
+        android:layout_height="3dp"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:background="@drawable/buttons_recatngle"
+        android:backgroundTint="@color/gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAccount_PASSWORD" />
+    <TextView
+        android:id="@+id/textViewAccount_Hide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="20dp"
+        android:drawableEnd="@drawable/ic_visibility"
+        android:text="Hide my profile"
+        android:textColor="@color/navyblue_body"
+        android:textSize="@dimen/sp_20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.152"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAccount_PASSWORD" />
+
+
+
+    <TextView
+        android:id="@+id/textViewLine3"
+        android:layout_width="0dp"
+        android:layout_height="3dp"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:background="@drawable/buttons_recatngle"
+        android:backgroundTint="@color/gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAccount_Hide" />
+    <TextView
+        android:id="@+id/textViewAccount_Delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="20dp"
+        android:drawableEnd="@drawable/ic_dustbin"
+        android:text="Delete profile"
+        android:textColor="@color/navyblue_body"
+        android:textSize="@dimen/sp_20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.152"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAccount_Hide" />
+
+
+
+    <TextView
+        android:id="@+id/textViewLine4"
+        android:layout_width="0dp"
+        android:layout_height="3dp"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:background="@drawable/buttons_recatngle"
+        android:backgroundTint="@color/gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAccount_Delete" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -25,10 +25,10 @@ public class CompleteProfileActivity extends AppCompatActivity {
         if (getIntent() != null && getIntent().getExtras() != null) {
             String gender = getIntent().getStringExtra("Gender");
             if (gender != null && (!gender.isEmpty())) {
-                if (gender.contains("Male")) {
-                    ivSetIcon.setImageResource(R.drawable.ic_boy);
-                } else if (gender.contains("Female")) {
+                if (gender.contains("Female")) {
                     ivSetIcon.setImageResource(R.drawable.ic_girl);
+                } else if (gender.contains("Male")) {
+                    ivSetIcon.setImageResource(R.drawable.ic_boy);
                 }
             }
         }

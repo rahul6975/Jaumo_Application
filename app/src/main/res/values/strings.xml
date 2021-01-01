@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Jaumo_App</string>
+    <string name="app_name">Jaumo</string>
     <string name="help_gender">Help us to match you up with like-minded people.</string>
     <string name="my_gender">What gender do you identify as ? </string>
     <string name="filter">Filter </string>
@@ -141,6 +141,13 @@
     <string name="your_name">Your name</string>
     <string name="sent_likes_settings">Sent Likes</string>
     <string name="ok">OK</string>
+    <string name="title_activity_priya__rai">Priya_Rai</string>
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="want">you want.</string>
     <string name="India">India</string>
     <string name="enter_location">Enter Location</string>

@@ -56,7 +56,7 @@ public class SignUpWithEmail extends AppCompatActivity {
                     RadioButton radioButton = (RadioButton) rgGender.findViewById(radioButtonID);
 
                     String gender = radioButton.getText().toString();
-                    if (gender.equalsIgnoreCase("Feale")) {
+                    if (gender.equalsIgnoreCase("Female")) {
                         Toast.makeText(SignUpWithEmail.this, "Welcome " + et_name.getText().toString(), Toast.LENGTH_LONG).show();
                         Intent intent = new Intent(SignUpWithEmail.this, Home_Page_Women.class);
                         startActivity(intent);

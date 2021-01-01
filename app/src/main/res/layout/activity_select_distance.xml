@@ -57,7 +57,8 @@
 
                 <RadioButton
                     android:id="@+id/rb_10"
-                    style="@style/RadioButton" />
+                    style="@style/RadioButton"
+                    android:checked="false"/>
             </LinearLayout>
 
             <View style="@style/Filter_lineview"></View>
@@ -144,7 +145,7 @@
                     android:id="@+id/tv_500"
                     style="@style/RadioButtonText"
                     android:layout_weight="1"
-                    android:text="@string/distance_50km" />
+                    android:text="@string/distance_500km" />
 
                 <RadioButton
                     android:id="@+id/rb_500"
@@ -162,7 +163,7 @@
                     android:id="@+id/tv_1000"
                     style="@style/RadioButtonText"
                     android:layout_weight="1"
-                    android:text="@string/distance_50km" />
+                    android:text="@string/distance_1000km" />
 
                 <RadioButton
                     android:id="@+id/rb_1000"

@@ -15,15 +15,14 @@ public class CompleteProfileActivity extends AppCompatActivity {
         setContentView(R.layout.activity_complete_profile);
 
         ivSetIcon = findViewById(R.id.profile_img);
-        String gender = getIntent().getStringExtra("Gender");
+        if(getIntent()!=null && getIntent().getExtras()!=null) {
+            String gender = getIntent().getStringExtra("Gender");
 
-        if(gender.contains("Male"))
-        {
-            ivSetIcon.setImageResource(R.drawable.ic_boy);
-        }
-        else if (gender.contains("Female"))
-        {
-            ivSetIcon.setImageResource(R.drawable.ic_girl);
+            if (gender.contains("Male")) {
+                ivSetIcon.setImageResource(R.drawable.ic_boy);
+            } else if (gender.contains("Female")) {
+                ivSetIcon.setImageResource(R.drawable.ic_girl);
+            }
         }
     }
 }

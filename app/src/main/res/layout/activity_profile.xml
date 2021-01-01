@@ -66,9 +66,9 @@
                 android:id="@+id/ivSetIcon"
                 android:layout_width="@dimen/dp_120"
                 android:layout_height="@dimen/dp_120"
-                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
                 android:layout_marginTop="@dimen/dp_50"
-                android:src="@drawable/women_eighteen" />
+                android:src="@drawable/ic_profile_pic" />
 
             <TextView
                 android:layout_width="21dp"
@@ -95,14 +95,14 @@
             android:background="@color/light_gray"
             android:drawableStart="@drawable/completeprofile_scroll" />
 
-        <TextView
-            android:id="@+id/tv_complete_profile"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/dp_10"
-            android:gravity="center"
-            android:text="@string/complete_your_profile"
-            android:textColor="@color/teal_200" />
+            <TextView
+                android:id="@+id/tv_complete_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:gravity="center"
+                android:text="@string/complete_your_profile"
+                android:textColor="@color/teal_200" />
 
         <View
             android:id="@+id/settings_l1"

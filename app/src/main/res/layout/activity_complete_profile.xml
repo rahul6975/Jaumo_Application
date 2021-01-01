@@ -152,6 +152,7 @@
                     android:textColor="@color/blue_main" />
 
                 <TextView
+                    android:id="@+id/profession"
                     style="@style/Filter_TextView"
                     android:hint="@string/add"
                     android:textColorHint="@color/green_edit"
@@ -175,6 +176,7 @@
                     android:textColor="@color/blue_main" />
 
                 <TextView
+                    android:id="@+id/looking_for"
                     style="@style/Filter_TextView"
                     android:hint="@string/add"
                     android:textColorHint="@color/green_edit"

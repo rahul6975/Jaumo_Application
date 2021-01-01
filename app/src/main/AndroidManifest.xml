@@ -9,8 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Jaumo_App">
-        <activity android:name=".MyLocationActivity"></activity>
-        <activity android:name=".Neeta_Singh"></activity>
+        <activity android:name=".SelectLookingFor"></activity>
+        <activity android:name=".Profession" />
+        <activity android:name=".MyLocationActivity" />
+        <activity android:name=".Neeta_Singh" />
         <activity android:name=".Kareshma_Yadav" />
         <activity android:name=".Lovely_Joy" />
         <activity android:name=".Nisha_Dubey" />
@@ -50,7 +52,6 @@
         <activity android:name=".Binod_Jaiswal" />
         <activity android:name=".Suraj_Gupta" />
         <activity android:name=".Abhay_Sharma" />
->>>>>>> b1f45e72df8034e4dd0446d975f8fa9e69877baa
         <activity android:name=".Support" />
         <activity android:name=".Account" />
         <activity android:name=".homePage_Setting" />

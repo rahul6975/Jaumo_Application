@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelectLookingFor">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp_20"
+                    android:layout_weight="2"
+                    android:text="@string/what_are_you_looking_for"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dp_20"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/btn_cross"
+                    android:layout_width="38dp"
+                    android:layout_height="23dp"
+                    android:layout_margin="@dimen/dp_20"
+                    app:srcCompat="@drawable/cross_icon" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_iwant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginRight="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:layout_weight="2"
+                android:text="@string/i_want"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+
+            <EditText
+                android:id="@+id/et_iwant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/ask_me"
+                android:layout_marginRight="@dimen/dp_20"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:textColor="@color/black"
+                android:textColorHint="@color/light_gray"
+                android:textSize="@dimen/dp_20"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginRight="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:layout_weight="2"
+                android:text="@string/gender"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+
+            <EditText
+                android:id="@+id/et_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginRight="@dimen/dp_20"
+                android:hint="@string/a_man"
+                android:textColor="@color/black"
+                android:textColorHint="@color/light_gray"
+                android:textSize="@dimen/dp_20"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_marginRight="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:layout_weight="2"
+                android:text="@string/age"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+
+            <EditText
+                android:id="@+id/et_age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/ask_me"
+                android:layout_marginRight="@dimen/dp_20"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:textColor="@color/black"
+                android:textColorHint="@color/light_gray"
+                android:textSize="@dimen/dp_20"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        style="@style/Buttons"
+        android:id="@+id/btn_save"
+        android:text="@string/save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"></Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

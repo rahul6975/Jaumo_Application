@@ -57,7 +57,8 @@
 
                 <RadioButton
                     android:id="@+id/rb_10"
-                    style="@style/RadioButton" />
+                    style="@style/RadioButton"
+                    android:checked="false"/>
             </LinearLayout>
 
             <View style="@style/Filter_lineview"></View>

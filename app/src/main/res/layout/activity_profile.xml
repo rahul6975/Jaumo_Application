@@ -49,6 +49,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <LinearLayout
+            android:id="@+id/btn_ll_completeprofile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
         <RelativeLayout
             android:id="@+id/rl_img"
             android:layout_width="wrap_content"
@@ -87,7 +93,7 @@
             android:layout_marginTop="@dimen/dp_20"
             android:layout_marginRight="@dimen/dp_30"
             android:background="@color/light_gray"
-            android:drawableStart="@drawable/scroll_bar" />
+            android:drawableStart="@drawable/completeprofile_scroll" />
 
         <TextView
             android:id="@+id/tv_complete_profile"
@@ -101,12 +107,14 @@
         <View
             android:id="@+id/settings_l1"
             style="@style/Filter_Fulllineview"></View>
+        </LinearLayout>
 
         <LinearLayout
             android:id="@+id/ll_settings"
             style="@style/Filter_LinearLayout">
 
             <TextView
+                android:id="@+id/tvSettings"
                 style="@style/Filter_TextView"
                 android:layout_marginTop="@dimen/dp_10"
                 android:drawableEnd="@drawable/ic_settings"
@@ -114,7 +122,7 @@
 
             <View
                 android:id="@+id/likes_l1"
-                style="@style/Filter_lineview"></View>
+                style="@style/Filter_lineview"/>
 
         </LinearLayout>
 

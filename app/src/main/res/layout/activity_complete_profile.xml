@@ -20,7 +20,7 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/dp_10"
         android:layout_margin="@dimen/dp_25"
-        android:drawableStart="@drawable/scroll_bar"
+        android:drawableStart="@drawable/completeprofile_scroll"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btn_cross" />
@@ -30,8 +30,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/dp_10"
-        android:textColor="@color/green_edit"
         android:text="@string/complete_your_profile"
+        android:textColor="@color/green_edit"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvcompleteprofile_scroll" />
@@ -55,6 +55,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
+
                 <ImageView
                     android:id="@+id/profile_img"
                     android:layout_width="match_parent"
@@ -76,10 +77,10 @@
                 android:layout_marginLeft="@dimen/dp_20"
                 android:layout_marginTop="@dimen/dp_10"
                 android:layout_marginRight="@dimen/dp_20"
-                 android:drawableEnd="@drawable/ic_pencil"
-                    android:textColor="@color/blue_main"
-                android:text="@string/guest"
+                android:drawableEnd="@drawable/ic_pencil"
                 android:drawablePadding="@dimen/dp_10"
+                android:text="@string/guest"
+                android:textColor="@color/blue_main"
                 android:textSize="@dimen/dp_20"
                 android:textStyle="bold" />
 
@@ -88,14 +89,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/dp_15"
-                android:layout_marginRight="@dimen/dp_15"
                 android:layout_marginTop="@dimen/dp_5"
-                android:drawableStart="@drawable/location_png"
+                android:layout_marginRight="@dimen/dp_15"
+                android:drawableStart="@drawable/location"
                 android:drawablePadding="@dimen/dp_10"
                 android:text="@string/begumbazar"
                 android:textColor="@color/black"
                 android:textSize="@dimen/dp_20"
                 android:textStyle="bold" />
+           <!-- android:drawableStart="@drawable/location_png"-->
 
             <Button
                 android:id="@+id/verify_profile"
@@ -109,9 +111,11 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="@string/verify_message" />
+
             <View
                 android:id="@+id/line1"
                 style="@style/Filter_lineview"></View>
+
             <LinearLayout
                 android:id="@+id/ll_hometown"
                 style="@style/Filter_LinearLayout">
@@ -120,20 +124,20 @@
                     style="@style/Filter_TextView"
                     android:layout_marginTop="@dimen/dp_10"
                     android:drawableEnd="@drawable/ic_pencil"
-                    android:textColor="@color/blue_main"
                     android:text="@string/hometown"
-                   />
+                    android:textColor="@color/blue_main" />
 
                 <TextView
                     style="@style/Filter_TextView"
-                    android:textColor="@color/green_edit"
-                    android:hint="@string/begumbazar" />
+                    android:text="@string/begumbazar"
+                    android:textColor="@color/green_edit" />
 
                 <View
                     android:id="@+id/hometown_l1"
                     style="@style/Filter_lineview"></View>
 
             </LinearLayout>
+
             <LinearLayout
                 android:id="@+id/ll_profession"
                 style="@style/Filter_LinearLayout">
@@ -142,19 +146,20 @@
                     style="@style/Filter_TextView"
                     android:layout_marginTop="@dimen/dp_10"
                     android:drawableEnd="@drawable/ic_pencil"
-                    android:textColor="@color/blue_main"
-                    android:text="@string/profession" />
+                    android:text="@string/profession"
+                    android:textColor="@color/blue_main" />
 
                 <TextView
                     style="@style/Filter_TextView"
-                    android:textColor="@color/green_edit"
-                    android:text="@string/add" />
+                    android:text="@string/add"
+                    android:textColor="@color/green_edit" />
 
                 <View
                     android:id="@+id/profession_l1"
                     style="@style/Filter_lineview"></View>
 
             </LinearLayout>
+
             <LinearLayout
                 android:id="@+id/ll_looking_for"
                 style="@style/Filter_LinearLayout">
@@ -163,19 +168,20 @@
                     style="@style/Filter_TextView"
                     android:layout_marginTop="@dimen/dp_10"
                     android:drawableEnd="@drawable/ic_pencil"
-                    android:textColor="@color/blue_main"
-                    android:text="@string/looking_for_only" />
+                    android:text="@string/looking_for_only"
+                    android:textColor="@color/blue_main" />
 
                 <TextView
                     style="@style/Filter_TextView"
-                      android:textColor="@color/green_edit"
-                    android:text="@string/add" />
+                    android:text="@string/add"
+                    android:textColor="@color/green_edit" />
 
                 <View
                     android:id="@+id/looking_for_l1"
                     style="@style/Filter_lineview"></View>
 
             </LinearLayout>
+
             <LinearLayout
                 android:id="@+id/ll_relation_status"
                 style="@style/Filter_LinearLayout">
@@ -184,18 +190,20 @@
                     style="@style/Filter_TextView"
                     android:layout_marginTop="@dimen/dp_10"
                     android:drawableEnd="@drawable/ic_pencil"
-                    android:textColor="@color/blue_main"
-                    android:text="@string/education" />
+                    android:text="@string/relation_status"
+                    android:textColor="@color/blue_main" />
 
                 <TextView
                     style="@style/Filter_TextView"
-                    android:hint="@string/add" />
+                    android:text="@string/add"
+                    android:textColor="@color/green_edit"/>
 
                 <View
                     android:id="@+id/ralationstatius_l1"
                     style="@style/Filter_lineview"></View>
 
             </LinearLayout>
+
             <LinearLayout
                 android:id="@+id/ll_body_height"
                 style="@style/Filter_LinearLayout">
@@ -204,18 +212,20 @@
                     style="@style/Filter_TextView"
                     android:layout_marginTop="@dimen/dp_10"
                     android:drawableEnd="@drawable/ic_pencil"
-                    android:textColor="@color/blue_main"
-                    android:text="@string/body_height" />
+                    android:text="@string/body_height"
+                    android:textColor="@color/blue_main" />
 
                 <TextView
                     style="@style/Filter_TextView"
-                    android:hint="@string/add" />
+                    android:textColor="@color/green_edit"
+                    android:text="@string/add" />
 
                 <View
                     android:id="@+id/bodyheight_l1"
                     style="@style/Filter_lineview"></View>
 
             </LinearLayout>
+
             <LinearLayout
                 android:id="@+id/ll_education"
                 style="@style/Filter_LinearLayout">
@@ -224,18 +234,20 @@
                     style="@style/Filter_TextView"
                     android:layout_marginTop="@dimen/dp_10"
                     android:drawableEnd="@drawable/ic_pencil"
-                    android:textColor="@color/blue_main"
-                    android:text="@string/education" />
+                    android:text="@string/education"
+                    android:textColor="@color/blue_main" />
 
                 <TextView
                     style="@style/Filter_TextView"
-                    android:hint="@string/add" />
+                    android:textColor="@color/green_edit"
+                    android:text="@string/add" />
 
                 <View
                     android:id="@+id/education_l1"
                     style="@style/Filter_lineview"></View>
 
             </LinearLayout>
+
             <LinearLayout
                 android:id="@+id/ll_smoking"
                 style="@style/Filter_LinearLayout">
@@ -244,19 +256,20 @@
                     style="@style/Filter_TextView"
                     android:layout_marginTop="@dimen/dp_10"
                     android:drawableEnd="@drawable/ic_pencil"
-                    android:textColor="@color/blue_main"
-                    android:text="@string/smoker" />
+                    android:text="@string/smoker"
+                    android:textColor="@color/blue_main" />
 
                 <TextView
                     style="@style/Filter_TextView"
-                      android:textColor="@color/green_edit"
-                    android:text="@string/add" />
+                    android:text="@string/add"
+                    android:textColor="@color/green_edit" />
 
                 <View
                     android:id="@+id/smoking_l1"
                     style="@style/Filter_lineview"></View>
 
             </LinearLayout>
+
             <LinearLayout
                 android:id="@+id/ll_religion"
                 style="@style/Filter_LinearLayout">
@@ -265,19 +278,20 @@
                     style="@style/Filter_TextView"
                     android:layout_marginTop="@dimen/dp_10"
                     android:drawableEnd="@drawable/ic_pencil"
-                    android:textColor="@color/blue_main"
-                    android:text="@string/looking_for" />
+                    android:text="@string/looking_for"
+                    android:textColor="@color/blue_main" />
 
                 <TextView
                     style="@style/Filter_TextView"
-                      android:textColor="@color/green_edit"
-                    android:text="@string/add" />
+                    android:text="@string/add"
+                    android:textColor="@color/green_edit" />
 
                 <View
                     android:id="@+id/religion_l1"
                     style="@style/Filter_lineview"></View>
 
             </LinearLayout>
+
             <LinearLayout
                 android:id="@+id/ll_body_type"
                 style="@style/Filter_LinearLayout">
@@ -286,18 +300,20 @@
                     style="@style/Filter_TextView"
                     android:layout_marginTop="@dimen/dp_10"
                     android:drawableEnd="@drawable/ic_pencil"
-                    android:textColor="@color/blue_main"
-                    android:text="@string/body_height" />
+                    android:text="@string/body_type"
+                    android:textColor="@color/blue_main" />
 
                 <TextView
                     style="@style/Filter_TextView"
-                    android:hint="@string/add" />
+                    android:hint="@string/add"
+                    android:textColor="@color/green_edit"/>
 
                 <View
                     android:id="@+id/bodytype_l1"
                     style="@style/Filter_lineview"></View>
 
             </LinearLayout>
+
             <LinearLayout
                 android:id="@+id/ll_language"
                 style="@style/Filter_LinearLayout">
@@ -306,18 +322,20 @@
                     style="@style/Filter_TextView"
                     android:layout_marginTop="@dimen/dp_10"
                     android:drawableEnd="@drawable/ic_pencil"
-                    android:textColor="@color/blue_main"
-                    android:text="@string/language" />
+                    android:text="@string/language"
+                    android:textColor="@color/blue_main" />
 
                 <TextView
                     style="@style/Filter_TextView"
-                    android:hint="@string/add" />
+                    android:textColor="@color/green_edit"
+                    android:text="@string/add" />
 
                 <View
                     android:id="@+id/languale_l1"
                     style="@style/Filter_lineview"></View>
 
             </LinearLayout>
+
             <LinearLayout
                 android:id="@+id/ll_drinking"
                 style="@style/Filter_LinearLayout">
@@ -325,14 +343,14 @@
                 <TextView
                     style="@style/Filter_TextView"
                     android:layout_marginTop="@dimen/dp_10"
-                   android:drawableEnd="@drawable/ic_pencil"
-                    android:textColor="@color/blue_main"
-                    android:text="@string/smoker" />
+                    android:drawableEnd="@drawable/ic_pencil"
+                    android:text="@string/smoker"
+                    android:textColor="@color/blue_main" />
 
                 <TextView
                     style="@style/Filter_TextView"
-                      android:textColor="@color/green_edit"
-                    android:text="@string/add" />
+                    android:text="@string/add"
+                    android:textColor="@color/green_edit" />
 
                 <View
                     android:id="@+id/drinking_l1"
@@ -347,14 +365,14 @@
                 <TextView
                     style="@style/Filter_TextView"
                     android:layout_marginTop="@dimen/dp_10"
-                   android:drawableEnd="@drawable/ic_pencil"
-                    android:textColor="@color/blue_main"
-                    android:text="@string/exercise" />
+                    android:drawableEnd="@drawable/ic_pencil"
+                    android:text="@string/exercise"
+                    android:textColor="@color/blue_main" />
 
                 <TextView
                     style="@style/Filter_TextView"
-                      android:textColor="@color/green_edit"
-                    android:text="@string/add" />
+                    android:text="@string/add"
+                    android:textColor="@color/green_edit" />
 
                 <View
                     android:id="@+id/exercise_l1"
@@ -369,14 +387,14 @@
                 <TextView
                     style="@style/Filter_TextView"
                     android:layout_marginTop="@dimen/dp_10"
-                   android:drawableEnd="@drawable/ic_pencil"
-                    android:textColor="@color/blue_main"
-                    android:text="@string/tattoos" />
+                    android:drawableEnd="@drawable/ic_pencil"
+                    android:text="@string/tattoos"
+                    android:textColor="@color/blue_main" />
 
                 <TextView
                     style="@style/Filter_TextView"
-                      android:textColor="@color/green_edit"
-                    android:text="@string/add" />
+                    android:text="@string/add"
+                    android:textColor="@color/green_edit" />
 
                 <View
                     android:id="@+id/tattoos_l1"
@@ -391,14 +409,14 @@
                 <TextView
                     style="@style/Filter_TextView"
                     android:layout_marginTop="@dimen/dp_10"
-                   android:drawableEnd="@drawable/ic_pencil"
-                    android:textColor="@color/blue_main"
-                    android:text="@string/pets" />
+                    android:drawableEnd="@drawable/ic_pencil"
+                    android:text="@string/pets"
+                    android:textColor="@color/blue_main" />
 
                 <TextView
                     style="@style/Filter_TextView"
-                      android:textColor="@color/green_edit"
-                    android:text="@string/add" />
+                    android:text="@string/add"
+                    android:textColor="@color/green_edit" />
 
                 <View
                     android:id="@+id/pets_l1"
@@ -413,14 +431,14 @@
                 <TextView
                     style="@style/Filter_TextView"
                     android:layout_marginTop="@dimen/dp_10"
-                   android:drawableEnd="@drawable/ic_pencil"
-                    android:textColor="@color/blue_main"
-                    android:text="@string/music" />
+                    android:drawableEnd="@drawable/ic_pencil"
+                    android:text="@string/music"
+                    android:textColor="@color/blue_main" />
 
                 <TextView
                     style="@style/Filter_TextView"
-                      android:textColor="@color/green_edit"
-                    android:text="@string/add" />
+                    android:text="@string/add"
+                    android:textColor="@color/green_edit" />
 
                 <View
                     android:id="@+id/music_l1"
@@ -435,14 +453,14 @@
                 <TextView
                     style="@style/Filter_TextView"
                     android:layout_marginTop="@dimen/dp_10"
-                   android:drawableEnd="@drawable/ic_pencil"
-                    android:textColor="@color/blue_main"
-                    android:text="@string/diet" />
+                    android:drawableEnd="@drawable/ic_pencil"
+                    android:text="@string/diet"
+                    android:textColor="@color/blue_main" />
 
                 <TextView
                     style="@style/Filter_TextView"
-                      android:textColor="@color/green_edit"
-                    android:text="@string/add" />
+                    android:text="@string/add"
+                    android:textColor="@color/green_edit" />
 
                 <View
                     android:id="@+id/diet_l1"
@@ -457,14 +475,14 @@
                 <TextView
                     style="@style/Filter_TextView"
                     android:layout_marginTop="@dimen/dp_10"
-                   android:drawableEnd="@drawable/ic_pencil"
-                    android:textColor="@color/blue_main"
-                    android:text="@string/children" />
+                    android:drawableEnd="@drawable/ic_pencil"
+                    android:text="@string/children"
+                    android:textColor="@color/blue_main" />
 
                 <TextView
                     style="@style/Filter_TextView"
-                      android:textColor="@color/green_edit"
-                    android:text="@string/add" />
+                    android:text="@string/add"
+                    android:textColor="@color/green_edit" />
 
                 <View
                     android:id="@+id/children_l1"
@@ -474,10 +492,11 @@
 
         </LinearLayout>
     </ScrollView>
+
     <TextView
+        android:id="@+id/btn_save"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/btn_save"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

@@ -76,6 +76,13 @@ public class Home_Page_Women extends AppCompatActivity {
                 Toast.makeText(Home_Page_Women.this,"Nobody liked your profile yet",Toast.LENGTH_LONG).show();
             }
         });
+        /*ibRefresh.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Home_Page_Women.this , Home_Page_Women.class);
+                startActivity(intent);
+            }
+        });*/
 
         ibChat.setOnClickListener(new View.OnClickListener() {
             @Override

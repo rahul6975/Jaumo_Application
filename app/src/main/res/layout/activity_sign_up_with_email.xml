@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".SignUpWithEmail">
 
-
     <ImageView
         android:id="@+id/more"
         android:layout_width="wrap_content"
@@ -14,7 +13,7 @@
         android:layout_margin="@dimen/dp_30"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_more" />
+        app:srcCompat="@drawable/ic_more_black_1_" />
 
     <TextView
         android:id="@+id/tv_title"
@@ -36,52 +35,51 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_title">
 
         <TextView
+            android:id="@+id/tv_email"
             style="@style/Filter_TextView"
             android:layout_marginTop="@dimen/dp_20"
             android:text="@string/email_address"
             android:textColor="@color/black" />
 
-        <TextView
+        <EditText
+            android:id="@+id/et_email"
+            style="@style/Filter_TextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/dp_10"
             android:layout_marginRight="@dimen/dp_20"
-            android:drawableEnd="@drawable/ic_key"
+            android:drawableEnd="@drawable/ic_mail"
             android:textColor="@color/black" />
-
-        <View
-            android:id="@+id/email_l1"
-            style="@style/Filter_lineview"></View>
-
-
     </LinearLayout>
-
     <LinearLayout
         android:id="@+id/ll_password"
         style="@style/Filter_LinearLayout"
+        android:orientation="vertical"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ll_email">
 
         <TextView
+            android:id="@+id/tv_password"
             style="@style/Filter_TextView"
             android:layout_marginTop="@dimen/dp_20"
-            android:text="@string/password" />
+            android:text="@string/password"
+            android:textColor="@color/black" />
 
-        <TextView
+        <EditText
+            android:id="@+id/et_password"
+            style="@style/Filter_TextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/dp_10"
             android:layout_marginRight="@dimen/dp_20"
             android:drawableEnd="@drawable/ic_key"
             android:textColor="@color/black" />
-
-        <View
-            android:id="@+id/password_l1"
-            style="@style/Filter_lineview"></View>
-
     </LinearLayout>
 
+
+
     <Button
+        android:id="@+id/btn_signin"
         style="@style/Buttons"
         android:layout_marginBottom="@dimen/dp_20"
         android:text="@string/sign_in"
